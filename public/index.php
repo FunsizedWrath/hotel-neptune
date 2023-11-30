@@ -1,11 +1,12 @@
 <?php
 
 require_once __DIR__ . '/../activate_session.php';
+require_once __DIR__ . '/../logout.php';
 
 ?>
 
 <head>
-    <link rel="stylesheet" href="styles/pagedaccueil.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>  Neptune Hotel  </title>
     <link rel="shortcut icon" href="images/Logo-Neptune-avec-rond-e1607450857665.ico" />
 </head>
@@ -17,18 +18,22 @@ require_once __DIR__ . '/../activate_session.php';
         <a class="active" href="index.php">Accueil</a>
         <a href="reserv.html">Reserver ma Chambre</a>
         <a href="listechambre.html">Liste des Chambres</a>
-        <a href="register.php">M'inscrire</a>
         <a href="contact.html">Nous Contacter</a>
+        <?php if (isset($_SESSION['user'])) { ?>
+            <a href ="?action=logout"> Me déconnecter</a>
+            <p>
+                <?php echo "Bonjour " . $_SESSION['user']['first_name'] . " " . $_SESSION['user']['family_name'] ?>
+                Vous êtes connecté.e
+            </p>
+        <?php } else { ?>
+            <a href="register.php">M'inscrire</a>
+            <a href="login.php">Me connecter</a>
+            <p> Vous n'êtes pas connecté.e </p>
+        <?php } ?>
       </div>
       <div class="droite">
-        <a href="login.php"><img src="icone.png" alt="identifant"></a>
+        <a href="login.php"><img src="images/icone.png" alt="identifant"></a>
       </div>
-      <?php if (isset($_SESSION['user'])) {
-                echo "Bonjour " . $_SESSION['user']['first_name'] . " " . $_SESSION['user']['family_name'] ?>
-                <h4> Vous êtes connecté.e </h4>
-            <?php } else { ?>
-                <h4> Vous n'êtes pas connecté.e </h4>
-            <?php } ?>
     </div>
 <br>
 <br>
