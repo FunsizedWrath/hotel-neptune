@@ -1,0 +1,106 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: grey;
+  padding: 20px;
+}
+
+input [type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgba(7, 247, 215, 1);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(15, 124, 110, 1);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type=submit]:active {
+  background-color: rgba(86, 255, 232, 1);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button#toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 50;
+    padding: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  @media screen and (min-width: 576px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1300px;
+    }
+}
