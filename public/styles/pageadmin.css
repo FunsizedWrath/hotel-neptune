@@ -61,4 +61,12 @@
  
     }
 
+    .droite img{
+      display: flex;
+      width: 48px;
+      height: 48px;
+      background-color: #04ade5;
+      margin-right: 40px;
+    }
+
  
