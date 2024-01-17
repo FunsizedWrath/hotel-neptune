@@ -1,3 +1,9 @@
+<?php
+
+require_once __DIR__ . '/../activate_session.php';
+require_once __DIR__ . '/../logout.php';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -16,7 +22,7 @@
         <a href="listechambre.html">Liste des Chambres</a>
         <a href="#inscr">M'inscrire</a>
         <a href="contact.html">Nous Contacter</a>
-      </div>
+        </div>
       <div class="droite">
         <a href="s'identifier.html"><img src="images/icone.png" alt="identifant"></a>
       </div>
@@ -28,22 +34,18 @@
         Bienvenue à l'Hotel Neptune
     </div>
     <div class="menu">
-        <div class="article1">
-            <div><img src="images/Facade Hotel tiara miramar.jpg" alt="hôtel"></div>
-                <div> <p>Curieux de voir ce que l'hôtel Neptune a à vous offrir ? Découvrez dès à présent nos cuisiniers et notre personnel...<a href="Présentation.html">en savoir plus</a></p></div>
-            </div>
         <div class="article2">
             <div><img src="images/Vue_mer-hotel-neptune-berck_sur_mer_1(1).png" alt="Reserver"></div>
-            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="reserv.html">Réserver ma chambre</a></p></div>
+            <div> <a href=>MODIFIER LES CHAMBRES</a></div>
         </div>
         <div class="sousmenu">
             <div class="article3">
                 <div><img src="images/pisicne-interieure-chambre-luxe-design.jpg" alt="chambre"></div>
-                <div> <p>Préférez vous la Chambre Royale ou nos chambres familiales ? Le luxe à portée de vos mains...<a href="listechambre.html">en savoir plus</a></p></div>
+                <div><a href="listechambre.html">MODIFIER RESERVATION</a></div>
             </div>
             <div class="article3">
                 <div><img src="images/thumb_Reflets_du_soleil_couchant_sur_la_plage.jpg" alt="coucher de soleil"></div>
-                    <div> <p>Profitez d'un cadre paradisiaque, à deux pas de la mer de Carnon, Prenez les vacances que vous avez toujours rêvés...<a href="présentationcarnon.html">en savoir plus</a></p></div>
+                    <div><a href="présentationcarnon.html">MODIFIER UTILISATEURS</a></div>
                 </div>
         </div>
     </div>
@@ -80,6 +82,3 @@
 </body>
 
 </html>
-
-
-        
