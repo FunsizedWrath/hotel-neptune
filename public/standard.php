@@ -44,7 +44,7 @@
                     De la fenêtre latérale, vous pouvez accéder au balcon équipé, qui offre une vue latérale sur l'étang. <br> <br>
                     <i><b>Équipements de la chambre:</b></i><br> Lit double et deux lits simples, micro-ondes, frigo, vaisselle, armoire, lampe, four et télévision
                 </p><br> <br>
-                <a href="reservation.html" id="bouton"> <b>RESERVER</b></a>
+                <a href="reservation.php" id="bouton"> <b>RESERVER</b></a>
                 <br><br><br> <a href="#ancre" >Voir les accès de l'hôtel</a>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                     <br><br>
                     <i><b>Équipements de la chambre:</b></i><br> Lit double et deux lits simples, micro-ondes, frigo, vaisselle, armoire, lampe, four et télévision <br>
                 </p><br> <br>
-                <a href="reservation.html" id="bouton"> <b>RESERVER</b></a>
+                <a href="reservation.php" id="bouton"> <b>RESERVER</b></a>
                 <br><br><br> <a href="#ancre" >Voir les accès de l'hôtel</a>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                     Elle dispose d'une agréable vue ainsi que d'une splendide salle de bain pleine de modernité. <br><br>
                     <i><b>Équipements de la chambre:</b></i><br> Lit double et deux lits simples, micro-ondes, frigo, vaisselle, armoire, lampe, four et télévision <br>
                 </p><br> <br>
-                <a href="reservation.html" id="bouton"> <b>RESERVER</b></a>
+                <a href="reservation.php" id="bouton"> <b>RESERVER</b></a>
                 <br><br><br> <a href="#ancre" >Voir les accès de l'hôtel</a>
                 </div>
             </div>

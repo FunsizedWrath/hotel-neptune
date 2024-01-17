@@ -45,7 +45,7 @@
                     Depuis le salon vous pourrez accéderà la terrasse et entendre le doux chant de la mer et son agréable vue sur les étoiles. <br> <br>
                     <i><b>Équipements de la chambre:</b></i><br> Votre chambre est équipé d'un lit double,un sofa,, une armoire, un bureau et d'une télévision. <br>
                     Vous trouverez un espace cuisine (disposant d'un micro-ondes, un four, un frigo, de la vaisselle) ouvert sur un jolie salon équipé d'un grand canapé, d'une table basse, une télévision. De plus vous disposez d'une salle à manger avec des chaises et une table.Et d'une salle de bain.</p><br> <br>
-                <a href="reservation.html" id="bouton"> <b>RESERVER</b></a>
+                <a href="reservation.php" id="bouton"> <b>RESERVER</b></a>
                 <br><br><br> <a href="#ancre" >Voir les accès de l'hôtel</a>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                     Depuis la fenêtre de votre chambre vous pourrez apercevoir et entendre le doux chant de la mer. Vous pouvez accéder à la terrasse suitué dans le salon, qui offre une agréable vue des étoiles le soir. <br> <br>
                     <i><b>Équipements de la chambre:</b></i><br> Votre chambre est équipé d'un lit double,d'un petit frigo, une armoire et d'une télévision. <br>
                     Vous trouverez un espace cuisine (disposant d'un micro-ondes, un four, un frigo, de la vaisselle) ouvert sur un jolie salon équipé d'un grand canapé, d'une chaise, d'une table basse et une télévision. De plus vous disposez d'une salle à manger avec des chaises et une table.Et d'une salle de bain.</p><br> <br>
-                <a href="reservation.html" id="bouton"> <b>RESERVER</b></a>
+                <a href="reservation.php" id="bouton"> <b>RESERVER</b></a>
                 <br><br><br> <a href="#ancre" >Voir les accès de l'hôtel</a>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                     Depuis la fenêtre de votre chambre vous pourrez apercevoir et entendre le doux chant de la mer. Vous pouvez accéder à la terrasse suitué dans le salon, qui offre une agréable vue des étoiles le soir. <br> <br>
                     <i><b>Équipements de la chambre:</b></i><br> Votre chambre est équipé d'un lit double,d'un sofa, de table de chevet, d'une grande armoire et d'une télévision. <br>
                     Vous trouverez un espace bare (disposant d'un mixeur, de chaises,d'un frigo, de la vaisselle) ouvert sur un magnifique séjour disposant d'un canapé, de chaise, d'une balançoire,de chaise, d'une bibliothèque et une télévision. De plus vous disposez d'une salle à manger avec des chaises et une grande table conviviale. Et d'une salle de bain.</p><br> <br>
-                <a href="reservation.html" id="bouton"> <b>RESERVER</b></a>
+                <a href="reservation.php" id="bouton"> <b>RESERVER</b></a>
                 <br><br><br> <a href="#ancre" >Voir les accès de l'hôtel</a>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                     Votre chambre est entièrement ouverte sur la vue de la mer. Vous avez accès à une cuisine ouverte sur le salon. <br> <br>
                     <i><b>Équipements de la chambre:</b></i><br> Votre chambre est équipé d'un lit double,d'un sofa, de table de chevet et d'un grand dressing. <br>
                     Vous trouverez un espace bare (disposant d'un mixeur, de chaises,d'un frigo, de la vaisselle), d'une cuisine (avec four, micronde, frigo et toute sorte d'appareil électronique), ouvert sur un magnifique séjour disposant d'un grand canapé, d'une table basse en verre, d'une télévision et d'une bibliothèque. De plus vous disposez d'une grande salle d'eau, avec un baignoire, une douche, d'un grand miroir ainsi qu'un double vasque avec rangement.</p><br> <br>
-                <a href="reservation.html" id="bouton"> <b>RESERVER</b></a>
+                <a href="reservation.php" id="bouton"> <b>RESERVER</b></a>
                 <br><br><br> <a href="#ancre" >Voir les accès de l'hôtel</a>
                 </div>
             </div>

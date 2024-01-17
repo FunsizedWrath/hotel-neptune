@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../activate_session.php';
 require_once __DIR__ . '/../logout.php';
-require_once __DIR__ . '/../admin/check_admin.php';
+require_once __DIR__ . '/admin/check_admin.php';
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ require_once __DIR__ . '/../admin/check_admin.php';
         <a href="?action=logout">Me déconnecter</a>
         </div>
       <div class="droite">
-        <a href="s'identifier.html"><img src="images/icone.png" alt="identifant"></a>
+        <a href="s'identifier.php"><img src="images/icone.png" alt="identifant"></a>
       </div>
     </div>
 <br>

@@ -12,9 +12,9 @@
         <div class="gauche">
         <a class="active" href="index.php">Accueil</a>
         <a href="#reserv">Reserver ma Chambre</a>
-        <a href="listechambre.html">Liste des Chambres</a>
+        <a href="listechambre.php">Liste des Chambres</a>
         <a href="#inscr">M'inscrire</a>
-        <a href="contact.html">Nous Contacter</a>
+        <a href="contact.php">Nous Contacter</a>
       </div>
       <div class="droite">
         <img src="images/icone.png" alt="identifant">
