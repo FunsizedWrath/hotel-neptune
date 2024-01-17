@@ -46,7 +46,7 @@ require_once __DIR__ . '/check_admin.php';
             </div>
             <div class="article3">
                 <div><img src="images/thumb_Reflets_du_soleil_couchant_sur_la_plage.jpg" alt="coucher de soleil"></div>
-                    <div><a href="présentationcarnon.html">MODIFIER UTILISATEURS</a></div>
+                    <div><a href="presentationcarnon.html">MODIFIER UTILISATEURS</a></div>
                 </div>
         </div>
     </div>
