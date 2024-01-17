@@ -16,7 +16,7 @@ require_once __DIR__ . '/../logout.php';
     <div class="topnav">
         <div class="gauche">
         <a class="active" href="index.php">Accueil</a>
-        <a href="reserv.html">Reserver ma Chambre</a>
+        <a href="reserv.html">Réserver ma Chambre</a>
         <a href="listechambre.html">Liste des Chambres</a>
         <a href="contact.html">Nous Contacter</a>
         <?php if (isset($_SESSION['user'])) { ?>
