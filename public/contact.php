@@ -11,11 +11,11 @@
 
     <div class="topnav">
         <div class="gauche">
-        <a  href="index.php">Accueil</a>
-        <a class="active" href="reserv.html">Réserver ma Chambre</a>
-        <a href="listechambre.html">Liste des Chambres</a>
+        <a href="index.php">Accueil</a>
+        <a href="reserv.php">Réserver ma Chambre</a>
+        <a href="listechambre.php">Liste des Chambres</a>
         <a href="#inscr">M'inscrire</a>
-        <a href="contact.html">Nous Contacter</a>
+        <a class="active" href="#cont">Nous Contacter</a>
       </div>
       <div class="droite">
         <img src="images/icone.png" alt="identifant">
@@ -24,19 +24,7 @@
 <br>
 <br>
 <br>
-
-    <div class="menu">
-        <form method="post" action="confirm.php">
-            <label for="chambre-select">Quelle chambre souhaitez vous ?</label><br>
-            <select name="chambre" id="chambre-select">
-                <option value="">Faites votre choix</option>
-                <option value="Royal">Royal</option>
-                <option value="Confort">Confort</option>
-                <option value="Standard">Standard</option>
-            </select>
-        </form>
-    </div>
-   <div class="contact">
+   <div class="contactg">
         <div>
                 ADRESSE
                 <br>
@@ -65,6 +53,10 @@
             <br>
             <br>
             <img src="/images/logos-handicaps-blc.webp" alt="logohandicap">
+   </div>
+   <div>
+    MAIL<br><br>
+    hotelneptune@gmail.fr
    </div>
 </body>
 

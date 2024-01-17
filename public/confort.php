@@ -1,3 +1,5 @@
+<?php
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -14,9 +16,9 @@
             <div class="gauche ">
             <a href="index.php">Accueil</a>
             <a href="#reserv">Réserver ma Chambre</a>
-            <a class="active" href="listechambre.html">Liste des Chambres</a>
+            <a class="active" href="listechambre.php">Liste des Chambres</a>
             <a href="#inscr">M'inscrire</a>
-            <a href="contact.html">Nous Contacter</a>
+            <a href="contact.php">Nous Contacter</a>
           </div>
           <div class="droite">
             <a href="s'identifier.php"><img src="images/icone.png" alt="identifant"></a>

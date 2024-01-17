@@ -19,9 +19,9 @@ require_once __DIR__ . '/../admin/check_admin.php';
     <div class="topnav">
         <div class="gauche">
         <a class="active" href="index.php">Accueil</a>
-        <a href="reserv.html">Reserver ma Chambre</a>
-        <a href="listechambre.html">Liste des Chambres</a>
-        <a href="contact.html">Nous Contacter</a>
+        <a href="reserv.php">Reserver ma Chambre</a>
+        <a href="listechambre.php">Liste des Chambres</a>
+        <a href="contact.php">Nous Contacter</a>
         <a href="?action=logout">Me déconnecter</a>
         </div>
       <div class="droite">
@@ -42,11 +42,11 @@ require_once __DIR__ . '/../admin/check_admin.php';
         <div class="sousmenu">
             <div class="article3">
                 <div><img src="images/pisicne-interieure-chambre-luxe-design.jpg" alt="chambre"></div>
-                <div><a href="listechambre.html">MODIFIER RESERVATION</a></div>
+                <div><a href="listechambre.php">MODIFIER RESERVATION</a></div>
             </div>
             <div class="article3">
                 <div><img src="images/thumb_Reflets_du_soleil_couchant_sur_la_plage.jpg" alt="coucher de soleil"></div>
-                    <div><a href="presentationcarnon.html">MODIFIER UTILISATEURS</a></div>
+                    <div><a href="presentationcarnon.php">MODIFIER UTILISATEURS</a></div>
                 </div>
         </div>
     </div>
