@@ -124,16 +124,7 @@ a {
     width: 100%;
 }
 
-@media screen (min-width 576 px){
-    .all {
-    width: 500 px;
-}
-}
-@media screen (min-width 768 px){
-    .all {
-    width: 700 px;
-}
-}
+
 .gamme{
     background-color: white;
 }
