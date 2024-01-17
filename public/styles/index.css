@@ -27,6 +27,16 @@ font-family: Brush Script MT;
     text-decoration: none;
     font-size: 17px;
   }
+
+  .droite {
+    display: flex;
+    color: #f2f2f2;
+    
+  }
+
+  .droite p {
+    margin-right: 10px;
+  }
   
   .gauche a:hover {
     background-color: #ddd;

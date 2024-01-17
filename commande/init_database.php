@@ -6,7 +6,7 @@ $database->query('
 CREATE TABLE IF NOT EXISTS chambre(
     id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     num_ch INTEGER UNIQUE NOT NULL,
-    étage INTEGER,
+    etage INTEGER,
     surface NUMERIC(15,2)  ,
     prix NUMERIC,
     wc INTEGER,

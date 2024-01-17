@@ -28,10 +28,18 @@ require_once __DIR__ . '/../logout.php';
         <?php } else { ?>
             <a href="register.php">M'inscrire</a>
             <a href="login.php">Me connecter</a>
-            <p> Vous n'êtes pas connecté.e </p>
         <?php } ?>
       </div>
       <div class="droite">
+      <?php if (isset($_SESSION['user'])) { ?>
+            <a href ="?action=logout"> Me déconnecter</a>
+            <p>
+                <?php echo "Bonjour " . $_SESSION['user']['first_name'] . " " . $_SESSION['user']['family_name'] ?>
+                Vous êtes connecté.e
+            </p>
+        <?php } else { ?>
+            <p> Vous n'êtes pas connecté.e </p>
+        <?php } ?>
         <a href="login.php"><img src="images/icone.png" alt="identifant"></a>
       </div>
     </div>

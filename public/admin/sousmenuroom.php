@@ -1,9 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../activate_session.php';
-require_once __DIR__ . '/../logout.php';
-require_once __DIR__ . '/admin/check_admin.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -31,23 +27,27 @@ require_once __DIR__ . '/admin/check_admin.php';
   <br>
   <br>
     <div class="titre">
-      Bienvenue sur la page administrateur
+      Bienvenue dans le sous-menu modifier chambre
   </div>
     <div class="menu">
       <div class="option">
-        <div><img src="images/lit.jpg" alt="lit"></div>
-        <div><a href="admin/sousmenuroom.php">MODIFIER LES CHAMBRES</a></div>
+        <div><img src="images/moins.png" alt="plus"></div>
+        <div><a href=>SUPPRIMER UNE CHAMBRE</a></div>
       </div>
       <div class="option">
-        <div><img src="images/calendrier.jpg" alt="lit"></div>
-        <div><a href=>MODIFIER LES RESERVATIONS</a></div>
+        <div><img src="images/crayon.png" alt="modifier"></div>
+        <div><a href=>MODIFIER UNE CHAMBRE</a></div>
       </div>
 
       <div class="option">
-        <div><img src="images/utilisateurs.webp" alt="lit"></div>
-        <div><a href=>MODIFIER LES UTLISATEURS</a></div>
+        <div><img src="images/plus.png" alt="moins"></div>
+        <div><a href=>AJOUTER UNE CHAMBRE</a></div>
       </div>
     </div>
 </body>
+
+
+
+
 
 </html>

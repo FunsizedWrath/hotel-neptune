@@ -1,0 +1,72 @@
+    .topnav {
+        background-color: #333;
+        position: fixed;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+      }
+      
+      .gauche a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .gauche a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .gauche a.active {
+        background-color: #04ade5;
+        color: white;
+      }
+
+      div.titre {
+        color: rgb(44, 44, 44);
+        text-align: center;
+        font-size: 70px;
+        font-family: Georgia;
+        }
+
+      div.menu {
+        background-color: #a79f9f81;
+        margin-left: 22%;
+        width: 925px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 400px;
+        padding-top: 30px;
+        border-radius: 20px;
+        display: flex;
+      }
+
+      .option {
+        width: 200px;
+        background-color: #ffffff;
+        padding-top: 30px;
+        border-radius: 10px;
+        height: 275px;
+        padding-left: 20px;
+       margin-left: 7%;
+      }
+
+
+      .option img {
+        width : 150px;
+        height : 150px;
+ 
+    }
+
+    .droite img{
+      display: flex;
+      width: 48px;
+      height: 48px;
+      background-color: #04ade5;
+      margin-right: 40px;
+    }
+
+ 
