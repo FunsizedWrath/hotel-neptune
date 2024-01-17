@@ -11,7 +11,4 @@ if (isset($_GET['action']) && $_GET['action'] === 'logout') {
     exit;
 }
 
-$isLoggedIn = isset($_SESSION['user']);
-$isAdmin = $isLoggedIn && $_SESSION['user']['isAdmin'] === 1;
-
 ?>

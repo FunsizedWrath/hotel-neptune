@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/../activate_session.php';
 require_once __DIR__ . '/../logout.php';
+require_once __DIR__ . '/check_admin.php';
 
 ?>
 <!DOCTYPE html>
@@ -20,8 +21,8 @@ require_once __DIR__ . '/../logout.php';
         <a class="active" href="index.php">Accueil</a>
         <a href="reserv.html">Reserver ma Chambre</a>
         <a href="listechambre.html">Liste des Chambres</a>
-        <a href="#inscr">M'inscrire</a>
         <a href="contact.html">Nous Contacter</a>
+        <a href="?action=logout">Me déconnecter</a>
         </div>
       <div class="droite">
         <a href="s'identifier.html"><img src="images/icone.png" alt="identifant"></a>

@@ -1,13 +1,13 @@
 <?php
 
 require_once __DIR__ . '/../activate_session.php';
+require_once __DIR__ . '/../database.php';
+//require_once __DIR__ . '/admin/check_admin.php';
 
 if (isset($_SESSION['user'])) {
     header('Location:/index.php');
     exit;
 }
-
-require_once __DIR__ . '/../database.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // check that form is filled out
@@ -33,9 +33,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // starting session
     session_start();
     $_SESSION['user'] = $connected_user;
+    $is_admin = !!$_SESSION['user']['is_admin'];
 
+    // var_dump($_SESSION['user']);
+    // var_dump($is_admin);
+    // exit;
 
-    header('Location:/index.php');
+    if (!$is_admin) {
+        header('Location:/index.php');
+        exit;
+    }
+
+    header('Location: /pageadmin.php');
     exit;
 }
 
