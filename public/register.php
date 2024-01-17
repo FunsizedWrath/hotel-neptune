@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../activate_session.php';
+include_once __DIR__ . '/../database.php';
 
 if (isset($_SESSION['user'])) {
     header('Location:/index.php');
@@ -25,8 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ) {
         exit("Le formulaire est incomplet.");
     }
-
-    include_once __DIR__ . '/../database.php';
 
     // does user exist
     $request = $database->prepare('SELECT id_user FROM users u WHERE u.email = :email');
