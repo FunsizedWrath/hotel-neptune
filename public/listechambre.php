@@ -13,9 +13,9 @@
         <div class="gauche">
         <a href="index.php">Accueil</a>
         <a href="#reserv">Réserver ma Chambre</a>
-        <a class="active" href="listechambre.html">Liste des Chambres</a>
+        <a class="active" href="listechambre.php">Liste des Chambres</a>
         <a href="#inscr">M'inscrire</a>
-        <a href="contact.html">Nous Contacter</a>
+        <a href="contact.php">Nous Contacter</a>
       </div>
       <div class="droite">
         <img src="images/icone.png" alt="identifant">
@@ -40,7 +40,7 @@
                 <p>
                     Nos chambres standards ont une vue sur une cour et un parking privatifs. Elles sont très calmes. Ces chambres sont neuves et climatisées. La salle de bain privative équipée d’une douche à l’italienne est séparée des WC. Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtoisie à votre disposition,coffre-fort et mini frigo.
                 </p>
-                <a href="confort.html" id="lien"> Voir nos chambres....</a>
+                <a href="standard.php" id="lien"> Voir nos chambres....</a>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
 Ces chambres sont neuves et climatisées. La salle de bain privative équipée d’une douche à l’italienne est séparée des WC.
 Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtoisie à votre disposition, coffre-fort et mini frigo.
                 </p>
-                <a href="confort.html" id="lien"> Voir nos chambres.... </a>
+                <a href="confort.php" id="lien"> Voir nos chambres.... </a>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@ Ces chambres sont neuves et climatisées. La salle de bain privative équipée d
 Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtoisie à votre disposition, coffre-fort et mini frigo.
 Réductions sur le restaurant , petit déjeuner compris et piscine privée et sauna à votre disposition
                 </p>
-                <a href="royal.html" id="lien"> Voir nos chambres.... </a>
+                <a href="royal.php" id="lien"> Voir nos chambres.... </a>
                 </div>
             </div>
         </div>

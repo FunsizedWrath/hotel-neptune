@@ -16,9 +16,9 @@ require_once __DIR__ . '/../logout.php';
     <div class="topnav">
         <div class="gauche">
         <a class="active" href="index.php">Accueil</a>
-        <a href="reserv.html">Réserver ma Chambre</a>
-        <a href="listechambre.html">Liste des Chambres</a>
-        <a href="contact.html">Nous Contacter</a>
+        <a href="reserv.php">Réserver ma Chambre</a>
+        <a href="listechambre.php">Liste des Chambres</a>
+        <a href="contact.php">Nous Contacter</a>
         <?php if (isset($_SESSION['user'])) { ?>
             <a href ="?action=logout"> Me déconnecter</a>
             <p>
@@ -44,20 +44,20 @@ require_once __DIR__ . '/../logout.php';
     <div class="menu">
         <div class="article1">
             <div><img src="images/Facade Hotel tiara miramar.jpg" alt="hôtel"></div>
-                <div> <p>Curieux de voir ce que l'hôtel Neptune a à vous offrir ? Découvrez dès à présent nos cuisiniers et notre personnel...<a href="presentation.html">en savoir plus</a></p></div>
+                <div> <p>Curieux de voir ce que l'hôtel Neptune a à vous offrir ? Découvrez dès à présent nos cuisiniers et notre personnel...<a href="presentation.php">en savoir plus</a></p></div>
             </div>
         <div class="article2">
             <div><img src="images/Vue_mer-hotel-neptune-berck_sur_mer_1(1).png" alt="Reserver"></div>
-            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="reserv.html">Réserver ma chambre</a></p></div>
+            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="reserv.php">Réserver ma chambre</a></p></div>
         </div>
         <div class="sousmenu">
             <div class="article3">
                 <div><img src="images/pisicne-interieure-chambre-luxe-design.jpg" alt="chambre"></div>
-                <div> <p>Préférez vous la Chambre Royale ou nos chambres familiales ? Le luxe à portée de vos mains...<a href="listechambre.html">en savoir plus</a></p></div>
+                <div> <p>Préférez vous la Chambre Royale ou nos chambres familiales ? Le luxe à portée de vos mains...<a href="listechambre.php">en savoir plus</a></p></div>
             </div>
             <div class="article3">
                 <div><img src="images/thumb_Reflets_du_soleil_couchant_sur_la_plage.jpg" alt="coucher de soleil"></div>
-                    <div> <p>Profitez d'un cadre paradisiaque, à deux pas de la mer de Carnon, Prenez les vacances que vous avez toujours rêvés...<a href="presentationcarnon.html">en savoir plus</a></p></div>
+                    <div> <p>Profitez d'un cadre paradisiaque, à deux pas de la mer de Carnon, Prenez les vacances que vous avez toujours rêvés...<a href="presentationcarnon.php">en savoir plus</a></p></div>
                 </div>
         </div>
     </div>
