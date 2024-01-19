@@ -154,7 +154,7 @@ a {
 .bloc {
     border-style: solid;
     border-width: 50px;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
     background-color: rgb(210, 190, 165);
 }
@@ -184,3 +184,19 @@ a {
     color: black;
     background-color:#ddd;
   }
+.center2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 70px;
+    padding-top: 20px;
+
+}
+.center3{
+    padding-left: 150px;
+    padding-right: 70px;
+    padding-top: 20px;
+
+}
