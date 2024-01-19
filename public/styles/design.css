@@ -143,3 +143,44 @@ a {
     background-color: #04ade5;
     margin-right: 40px;
   }
+
+  
+#barre {
+    
+    height : 25px;
+    width: 350px;
+}
+
+.bloc {
+    border-style: solid;
+    border-width: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(210, 190, 165);
+}
+#info {
+    font-size: 140%;
+    text-align: center;
+}
+
+#bouton2{
+    text-decoration: none;
+    color: white;
+    background-color:#333 ;
+    border-style: solid;
+    border-color: #04ade5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align : center;
+    font-size: 20px;
+    height : 70px;
+    width: 250px;
+    
+}
+#bouton2:hover{
+    
+    color: black;
+    background-color:#ddd;
+  }
