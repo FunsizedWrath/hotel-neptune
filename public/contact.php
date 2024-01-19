@@ -52,7 +52,7 @@
             ACCESSIBILITE
             <br>
             <br>
-            <img src="/images/logos-handicaps-blc.webp" alt="logohandicap">
+            <img src="images/logos-handicaps-blc.webp" alt="logohandicap">
    </div>
    <div>
     MAIL<br><br>

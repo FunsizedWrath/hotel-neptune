@@ -1,23 +1,19 @@
 <?php
 
- require_once __DIR__ . '/../activate_session.php';
+
 include_once __DIR__ . '/../database.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (
-        !isset ($_POST['first_name'])
-        ||!isset ($_POST['family_name'])
-        ||!isset ($_POST['email'])
-        ||!isset ($_POST['phone_nb'])
-        ||!isset ($_POST['password'])
-        ||!isset ($_POST['password2'])
+        !isset ($_POST['num_ch'])
+        ||!isset ($_POST['etage'])
+        ||!isset ($_POST['surface'])
+        ||!isset ($_POST['prix'])
 
-        ||empty ($_POST['first_name'])
-        ||empty ($_POST['family_name'])
-        ||empty ($_POST['email'])
-        ||empty ($_POST['phone_nb'])
-        ||empty ($_POST['password'])
-        ||empty ($_POST['password2'])
+        ||empty ($_POST['num_ch'])
+        ||empty ($_POST['etage'])
+        ||empty ($_POST['surface'])
+        ||empty ($_POST['prix'])
         ) {
         exit("Le formulaire est incomplet.");
     }

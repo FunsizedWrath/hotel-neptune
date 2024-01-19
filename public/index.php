@@ -19,20 +19,15 @@ require_once __DIR__ . '/../logout.php';
         <a href="reserv.php">Réserver ma Chambre</a>
         <a href="listechambre.php">Liste des Chambres</a>
         <a href="contact.php">Nous Contacter</a>
-        <?php if (isset($_SESSION['user'])) { ?>
-            <a href ="?action=logout"> Me déconnecter</a>
-            <p>
-                <?php echo "Bonjour " . $_SESSION['user']['first_name'] . " " . $_SESSION['user']['family_name'] ?>
-                Vous êtes connecté.e
-            </p>
-        <?php } else { ?>
+        <?php if (!isset($_SESSION['user'])) { ?>
             <a href="register.php">M'inscrire</a>
             <a href="login.php">Me connecter</a>
+        <?php } else { ?>
+            <a href ="?action=logout"> Me déconnecter</a>
         <?php } ?>
       </div>
       <div class="droite">
       <?php if (isset($_SESSION['user'])) { ?>
-            <a href ="?action=logout"> Me déconnecter</a>
             <p>
                 <?php echo "Bonjour " . $_SESSION['user']['first_name'] . " " . $_SESSION['user']['family_name'] ?>
                 Vous êtes connecté.e
@@ -97,7 +92,8 @@ require_once __DIR__ . '/../logout.php';
             ACCESSIBILITE
             <br>
             <br>
-            <img src="/images/logos-handicaps-blc.webp" alt="logohandicap">
+            <img src="images/logos-handicaps-blc.webp" alt="logohandicap">
+        </div>
    </div>
 </body>
 
