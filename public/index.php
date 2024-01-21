@@ -26,7 +26,7 @@ require_once __DIR__ . '/../activate_session.php';
             </div>
         <div class="article2">
             <div><img src="images/Vue_mer-hotel-neptune-berck_sur_mer_1(1).png" alt="Reserver"></div>
-            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="reservation/page_reserve.php">Réserver ma chambre</a></p></div>
+            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="room_list.php">Réserver ma chambre</a></p></div>
         </div>
         <div class="sousmenu">
             <div class="article3">

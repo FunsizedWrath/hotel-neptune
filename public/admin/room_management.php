@@ -10,6 +10,10 @@ if (empty($rooms = $request->fetchAll())) {
     echo("Vous n'avez aucune chambre.");
 }
 
+usort($rooms, function ($a, $b) {
+  return $a['num_ch'] - $b['num_ch'];
+});
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">

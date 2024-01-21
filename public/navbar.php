@@ -27,6 +27,6 @@ require_once __DIR__ . '/../activate_session.php';
     <?php } else { ?>
         <p> Vous n'êtes pas connecté.e </p>
     <?php } ?>
-    <a href="/login.php"><img src="images/icone.png" alt="identifant"></a>
+    <a href="/login.php"><img src="/images/icone.png" alt="identifant"></a>
     </div>
 </div>

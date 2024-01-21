@@ -10,6 +10,10 @@ if (empty($rooms = $request->fetchAll())) {
     echo("Vous n'avez aucune chambre.");
 }
 
+usort($rooms, function ($a, $b) {
+    return $a['num_ch'] - $b['num_ch'];
+});
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -47,7 +51,7 @@ if (empty($rooms = $request->fetchAll())) {
               <br>
               <b>Disponibilité : <?php echo $room['dispo'] ? "Disponible" : "Indisponible" ?></b>
             </div>
-            <a href=<?php echo "modify_room.php?id=" . $room["id"] ?>><button> Modifier</button></a>
+            <a href=<?php echo "reservation/book_room.php?id=" . $room["id"] ?>><button>Réserver</button></a>
         </div>
     <?php } ?>
     </div>
