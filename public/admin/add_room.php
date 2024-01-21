@@ -30,13 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // register with database
-    $request = $database->prepare('INSERT INTO rooms(num_ch, etage, surface, prix, gamme) VALUES(:num_ch, :etage, :surface, :prix, :gamme)');
+    $request = $database->prepare('INSERT INTO rooms(num_ch, etage, surface, prix, gamme, dispo) VALUES(:num_ch, :etage, :surface, :prix, :gamme, :dispo)');
     $request->execute([
         'num_ch'=>$_POST['num_ch'],
         'etage'=>$_POST['etage'],
         'surface'=>$_POST['surface'],
         'prix'=>$_POST['prix'],
         'gamme'=>$_POST['gamme'],
+        'dispo'=>1,
     ]);
 
     header('Location:/pageadmin.php');

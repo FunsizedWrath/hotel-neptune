@@ -35,7 +35,7 @@ require_once __DIR__ . '/admin/check_admin.php';
     <div class="menu">
       <div class="option">
         <div><img src="images/lit.jpg" alt="lit"></div>
-        <div><a href="admin/sousmenuroom.php">MODIFIER LES CHAMBRES</a></div>
+        <div><a href="admin/room_management.php">GESTION DES CHAMBRES</a></div>
       </div>
       <div class="option">
         <div><img src="images/calendrier.jpg" alt="lit"></div>
