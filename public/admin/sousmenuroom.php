@@ -35,16 +35,16 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
     <div class="menu">
       <div class="option">
         <div><img src="images/moins.png" alt="plus"></div>
-        <div><a href=>SUPPRIMER UNE CHAMBRE</a></div>
+        <div><a href="delete_room.php">SUPPRIMER UNE CHAMBRE</a></div>
       </div>
       <div class="option">
         <div><img src="images/crayon.png" alt="modifier"></div>
-        <div><a href=>MODIFIER UNE CHAMBRE</a></div>
+        <div><a href="modify_room.php">MODIFIER UNE CHAMBRE</a></div>
       </div>
 
       <div class="option">
         <div><img src="images/plus.png" alt="moins"></div>
-        <div><a href=>AJOUTER UNE CHAMBRE</a></div>
+        <div><a href="add_room.php">AJOUTER UNE CHAMBRE</a></div>
       </div>
     </div>
 </body>
