@@ -14,15 +14,7 @@ require_once __DIR__ . '/admin/check_admin.php';
 </head>
 
 <body>
-    <div class="topnav">
-        <div class="gauche">
-        <a class="active" href="pageadmin.php">Accueil Admin</a>
-        <a href ="?action=logout"> Me déconnecter</a>
-      </div>
-      <div class="droite">
-        <a href="s'identifier.php"><img src="images/icone.png" alt="identifant"></a>
-      </div>
-    </div>
+    <?php require_once 'navbar.php' ?>
   <br>
   <br>
   <br>

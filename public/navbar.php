@@ -1,11 +1,15 @@
 <?php
+require_once __DIR__ . '/../activate_session.php';
 ?>
 
 <div class="topnav">
     <div class="gauche">
     <a class="active" href="/index.php">Accueil</a>
-    <a href="/reservation/page_reserve.php">Réserver ma Chambre</a>
-    <a href="/listechambre.php">Liste des Chambres</a>
+    <?php if (isset($_SESSION['user']) && $_SESSION['user']['is_admin']) { ?>
+        <a class="active" href="/pageadmin.php">Page Admin</a>
+    <?php } ?>
+    <a href="/room_list.php">Réserver une chambre</a>
+    <a href="/gammes.php">Nos gammes</a>
     <a href="/contact.php">Nous Contacter</a>
     <?php if (!isset($_SESSION['user'])) { ?>
         <a href="register.php">M'inscrire</a>

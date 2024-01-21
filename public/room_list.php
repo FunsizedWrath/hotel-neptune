@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . '../../activate_session.php';
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . '../activate_session.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . '../database.php';
 
-$request = $database->prepare('SELECT * FROM rooms r');
+$request = $database->prepare('SELECT * FROM rooms r WHERE r.dispo = 1');
 $request->execute();
 
 if (empty($rooms = $request->fetchAll())) {
@@ -15,25 +15,20 @@ if (empty($rooms = $request->fetchAll())) {
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="styles/pageadmin.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/rooms.css" />
     <title>  Neptune Hotel  </title>
     <link rel="shortcut icon" href="images/Logo-Neptune-avec-rond-e1607450857665.ico" />
 </head>
 
 <body>
-    <?php require_once '../navbar.php' ?>
+    <?php require_once 'navbar.php' ?>
   <br>
   <br>
   <br>
     <div class="titre">
-      Gestion des chambres
+      Liste des chambres
   </div>
-      <div class="option">
-        <div><img src="images/plus.png" alt="moins"></div>
-        <div><a href="add_room.php">AJOUTER UNE CHAMBRE</a></div>
-      </div>
-    </div>
 
 
     <div class="room-list">
