@@ -144,6 +144,15 @@ a {
     margin-right: 40px;
   }
 
+  .droite {
+    display: flex;
+    color: #f2f2f2;
+    
+  }
+
+  .droite p {
+    margin-right: 10px;
+  }
   
 #barre {
     

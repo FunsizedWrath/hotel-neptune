@@ -15,7 +15,7 @@ require_once __DIR__ . '/../activate_session.php';
     <div class="topnav">
         <div class="gauche">
         <a class="active" href="index.php">Accueil</a>
-        <a href="reserv.php">Réserver ma Chambre</a>
+        <a href="page_reserve.php">Réserver ma Chambre</a>
         <a href="listechambre.php">Liste des Chambres</a>
         <a href="contact.php">Nous Contacter</a>
         <?php if (!isset($_SESSION['user'])) { ?>
@@ -50,7 +50,7 @@ require_once __DIR__ . '/../activate_session.php';
             </div>
         <div class="article2">
             <div><img src="images/Vue_mer-hotel-neptune-berck_sur_mer_1(1).png" alt="Reserver"></div>
-            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="reserv.php">Réserver ma chambre</a></p></div>
+            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="page_reserve.php">Réserver ma chambre</a></p></div>
         </div>
         <div class="sousmenu">
             <div class="article3">
