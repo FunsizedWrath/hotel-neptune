@@ -1,7 +1,7 @@
 <?php
 
 
-include_once __DIR__ . '/../database.php';
+require_once __DIR__ . '/../../database.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (

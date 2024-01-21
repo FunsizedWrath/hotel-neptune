@@ -2,10 +2,9 @@
 
 require_once __DIR__ . '/../activate_session.php';
 require_once __DIR__ . '/../database.php';
-require_once __DIR__ . '/admin/check_admin.php';
 
 if (isset($_SESSION['user'])) {
-    header('Location:/index.php');
+    header('Location: /index.php');
     exit;
 }
 
@@ -33,10 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // starting session
     session_start();
     $_SESSION['user'] = $connected_user;
-    $is_admin = !!$_SESSION['user']['is_admin'];
 
+    $is_admin = !!$_SESSION['user']['is_admin'];
     if (!$is_admin) {
-        header('Location:/index.php');
+        header('Location: /index.php');
         exit;
     }
 

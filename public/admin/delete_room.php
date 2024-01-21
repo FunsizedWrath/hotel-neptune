@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../activate_session.php';
-include_once __DIR__ . '/../database.php';
+require_once __DIR__ . '/../../activate_session.php';
+require_once __DIR__ . '/../../database.php';
 
 $stmt->prepare("DELETE FROM 'chambre' WHERE 'num_ch' = :num_ch");
 $stmt->execute(['num_ch' => $_POST['num_ch']]);
