@@ -29,7 +29,7 @@ $stmt->execute(['num_ch' => $_POST['num_ch']]);
                     <div>
                         <label for="num_ch">Numero de Chambre *</label>
                     </div>
-              <input type="submit" value="rajouter une chambre">
+              <input type="submit" value="effacer une chambre">
                 </div>
             </form>
         </div>

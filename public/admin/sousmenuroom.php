@@ -16,8 +16,8 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
 <body>
     <div class="topnav">
         <div class="gauche">
-        <a class="active" href="index.php">Accueil</a>
-        <a href="reserv.php">Réserver ma Chambre</a>
+        <a class="active" href="pageadmin.php">Accueil Admin</a>
+        <a href="page_reserve.php">Réserver ma Chambre</a>
         <a href="listechambre.php">Liste des Chambres</a>
         <a href="contact.php">Nous Contacter</a>
         <a href ="?action=logout"> Me déconnecter</a>
