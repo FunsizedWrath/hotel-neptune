@@ -12,7 +12,7 @@
 <div class="topnav">
         <div class="gauche">
         <a href="index.php">Accueil</a>
-        <a href="page_reserve.php">Réserver ma Chambre</a>
+        <a href="reservation/page_reserve.php">Réserver ma Chambre</a>
         <a href="listechambre.php">Liste des Chambres</a>
         <a  class="active" href="contact.php">Nous Contacter</a>
         <?php if (!isset($_SESSION['user'])) { ?>

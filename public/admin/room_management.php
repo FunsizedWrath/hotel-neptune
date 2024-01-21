@@ -25,7 +25,7 @@ if (empty($rooms = $request->fetchAll())) {
     <div class="topnav">
         <div class="gauche">
         <a class="active" href="pageadmin.php">Accueil Admin</a>
-        <a href="page_reserve.php">Réserver ma Chambre</a>
+        <a href="reservation/page_reserve.php">Réserver ma Chambre</a>
         <a href="listechambre.php">Liste des Chambres</a>
         <a href="contact.php">Nous Contacter</a>
         <a href ="?action=logout"> Me déconnecter</a>

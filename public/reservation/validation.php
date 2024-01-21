@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Réserver</title>
-    <link href="styles/design.css" rel="stylesheet">
+    <link href="../styles/design.css" rel="stylesheet">
 </head>
 
-<body class="gamme"> 
+<body class="gamme">
     <div class="all">
       <div class="topnav">
         <div class="gauche">
         <a href="index.php">Accueil</a>
-        <a href="page_reserve.php">Réserver ma Chambre</a>
+        <a href="reservation/page_reserve.php">Réserver ma Chambre</a>
         <a class="active" href="listechambre.php">Liste des Chambres</a>
         <a href="contact.php">Nous Contacter</a>
         <?php if (!isset($_SESSION['user'])) { ?>
@@ -31,27 +31,27 @@
         <?php } else { ?>
             <p> Vous n'êtes pas connecté.e </p>
         <?php } ?>
-        <a href="login.php"><img src="images/icone.png" alt="identifant"></a>
+        <a href="login.php"><img src="../images/icone.png" alt="identifant"></a>
       </div>
     </div>
         <br>
         <br>
         <br>
 
-               
+
 <div class="bloc">
 
 <h2 class="center2"> Validation de votre réservation</h2>
 <p id="info"> Vous allez réserver une chambre dans notre hôtel. <br>Afin de valider votre réservation, veuillez suivre les étapes en cliquant sur le bouton ci-dessous </p>
 
-<form action="..." method="post"></form> 
-<div class="center"><a href="paiement.html" id="bouton2" ><b>PASSER AU PAIEMENT</b></div>
+<form action="..." method="post"></form>
+<div class="center"><a href="paiement.php" id="bouton2" ><b>PASSER AU PAIEMENT</b></div>
 </div>
 </form>
 
   </div>
 
-        
+
 
     </div>
 </body>

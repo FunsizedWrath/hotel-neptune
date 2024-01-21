@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Réserver</title>
-    <link href="styles/design.css" rel="stylesheet">
+    <link href="../styles/design.css" rel="stylesheet">
 </head>
 
 <body class="gamme">
@@ -12,7 +12,7 @@
         <div class="topnav">
             <div class="gauche">
             <a href="index.php">Accueil</a>
-            <a class="active" href="page_reserve.php">Réserver ma Chambre</a>
+            <a class="active" href="reservation/page_reserve.php">Réserver ma Chambre</a>
             <a href="listechambre.php">Liste des Chambres</a>
             <a href="contact.php">Nous Contacter</a>
             <?php if (!isset($_SESSION['user'])) { ?>
@@ -31,26 +31,26 @@
             <?php } else { ?>
                 <p> Vous n'êtes pas connecté.e </p>
             <?php } ?>
-            <a href="login.php"><img src="images/icone.png" alt="identifant"></a>
+            <a href="login.php"><img src="../images/icone.png" alt="identifant"></a>
           </div>
         </div>
         <br>
         <br>
         <br>
 
-        
+
 <div class="bloc">
     <form action="validation.php" method="post"></form>    <!-- a compléter -->
     <div class="center">
         <label for="date" >Date arrivée:</label> <br>
             <input type= "date" name= "date" id="barre"><br><br>
-    
+
         <label for="date2" >Date départ: </label> <br>
-            <input type="date" name= "date2" id="barre"><br><br> 
-    
+            <input type="date" name= "date2" id="barre"><br><br>
+
         <label for="prix" > Prix maximum:</label> <br>
             <input type="number" name= "prix" id="barre"><br><br>
-    
+
         <label for="surface">Surface:</label> <br>
             <input type= "number" name= "surface" id="barre"><br><br>
             <br>

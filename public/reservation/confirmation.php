@@ -4,15 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Réserver</title>
-    <link href="styles/design.css" rel="stylesheet">
+    <link href="../styles/design.css" rel="stylesheet">
 </head>
 
-<body class="gamme"> 
+<body class="gamme">
     <div class="all">
     <div class="topnav">
         <div class="gauche">
         <a href="index.php">Accueil</a>
-        <a class="active" href="page_reserve.php">Réserver ma Chambre</a>
+        <a class="active" href="reservation/page_reserve.php">Réserver ma Chambre</a>
         <a href="listechambre.php">Liste des Chambres</a>
         <a href="contact.php">Nous Contacter</a>
         <?php if (!isset($_SESSION['user'])) { ?>
@@ -31,14 +31,14 @@
         <?php } else { ?>
             <p> Vous n'êtes pas connecté.e </p>
         <?php } ?>
-        <a href="login.php"><img src="images/icone.png" alt="identifant"></a>
+        <a href="login.php"><img src="../images/icone.png" alt="identifant"></a>
       </div>
     </div>
         <br>
         <br>
         <br>
 
-               
+
 <div class="bloc">
 
 <h2 class="center2"> Confirmation de votre réservation</h2>
@@ -46,7 +46,7 @@
 <img class="center3" src="chambreex.webp" alt="Notre chambre" width=800 lenght=50>
   </div>
 
-        
+
 
     </div>
 </body>

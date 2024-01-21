@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Liste des chambres</title>
-    <link href="styles/design.css" rel="stylesheet">
+    <link href="../styles/design.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 <div class="topnav">
         <div class="gauche">
         <a href="index.php">Accueil</a>
-        <a href="page_reserve.php">Réserver ma Chambre</a>
+        <a href="reservation/page_reserve.php">Réserver ma Chambre</a>
         <a class="active" href="listechambre.php">Liste des Chambres</a>
         <a href="contact.php">Nous Contacter</a>
         <?php if (!isset($_SESSION['user'])) { ?>
@@ -32,7 +32,7 @@
         <?php } else { ?>
             <p> Vous n'êtes pas connecté.e </p>
         <?php } ?>
-        <a href="login.php"><img src="images/icone.png" alt="identifant"></a>
+        <a href="login.php"><img src="../images/icone.png" alt="identifant"></a>
       </div>
     </div>
 <br><br>
@@ -44,7 +44,7 @@
     <div class="chambre-royal">
         <div class="d-flex">
             <div class="chambre-illustration">
-                <img src="images/chambre_royal2.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
+                <img src="../images/chambre_royal2.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
             </div>
             <div class="chambre-contenu">
                 <div class="d-flex">
@@ -68,7 +68,7 @@
     <div class="chambre-royal">
         <div class="d-flex">
             <div class="chambre-illustration">
-                <img src="images/chambre_royal1.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
+                <img src="../images/chambre_royal1.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
             </div>
             <div class="chambre-contenu">
                 <div class="d-flex">
@@ -92,7 +92,7 @@
     <div class="chambre-royal">
         <div class="d-flex">
             <div class="chambre-illustration">
-                <img src="images/chambre_royal3.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
+                <img src="../images/chambre_royal3.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
             </div>
             <div class="chambre-contenu">
                 <div class="d-flex">
@@ -116,7 +116,7 @@
     <div class="chambre-royal">
         <div class="d-flex">
             <div class="chambre-illustration">
-                <img src="images/chambre_royal4.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
+                <img src="../images/chambre_royal4.jpg" alt="Chambre" width=650 lenght=300> &nbsp;
             </div>
             <div class="chambre-contenu">
                 <div class="d-flex">
@@ -139,10 +139,10 @@
     <br>
     <h1> <small>Accès proposés par notre hôtel </small></h1> <br>
     <div id="ancre" class="d-flex">
-        <img src="images/piscine_privee.jpg" alt="piscine" width=250 lenght=100>
-        <img src="images/salle_de_sport_privee.jpg" alt="salle de sport" width=250 lenght=100>
-        <img src="images/sauna.jpg" alt="sauna" width=250 lenght=100>
-        <img src="images/wifi.jpg" alt="wifi" width=250 lenght=100>
+        <img src="../images/piscine_privee.jpg" alt="piscine" width=250 lenght=100>
+        <img src="../images/salle_de_sport_privee.jpg" alt="salle de sport" width=250 lenght=100>
+        <img src="../images/sauna.jpg" alt="sauna" width=250 lenght=100>
+        <img src="../images/wifi.jpg" alt="wifi" width=250 lenght=100>
     </div>
     <div class="d-flex">
         <p> <b> Piscine</b> <br> - 5 euros l'accès <br> - Accès gratuit pour les clients <br> de chambre Royale </p>
