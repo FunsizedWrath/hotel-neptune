@@ -14,8 +14,9 @@
         <a  href="index.php">Accueil</a>
         <a class="active" href="reserv.php">Réserver ma Chambre</a>
         <a href="listechambre.php">Liste des Chambres</a>
-        <a href="#inscr">M'inscrire</a>
         <a href="contact.php">Nous Contacter</a>
+        <a href="#inscr">M'inscrire</a>
+        <a href="login.php">Me connecter</a>
       </div>
       <div class="droite">
         <img src="images/icone.png" alt="identifant">
