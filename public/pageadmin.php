@@ -33,7 +33,7 @@ require_once __DIR__ . '/admin/check_admin.php';
 
       <div class="option">
         <div><img src="images/utilisateurs.webp" alt="lit"></div>
-        <div><a href=>MODIFIER LES UTLISATEURS</a></div>
+        <div><a href="admin/users_managment.php">MODIFIER LES UTLISATEURS</a></div>
       </div>
     </div>
 </body>
