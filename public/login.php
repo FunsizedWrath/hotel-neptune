@@ -63,10 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
         <div class="container">
         <div class="topnav navigation text-center">
-        <a href="index.php">
-            Accueil</a>
-         <a href="register.php">
-            Inscription</a>
         </div>
         <br>
         <div class="contact">
