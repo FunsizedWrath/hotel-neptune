@@ -9,18 +9,16 @@ if((session_status() !== PHP_SESSION_ACTIVE) || (!isset($_SESSION['user']))) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // $request = $database->prepare('UPDATE rooms SET num_ch=:num_ch, etage=:etage, surface=:surface, prix=:prix, gamme=:gamme WHERE id = :id');
-    // $request->execute([
-    //     'id'=> $_GET['id'],
-    //     'num_ch'=>$_POST['num_ch'],
-    //     'etage'=>$_POST['etage'],
-    //     'surface'=>$_POST['surface'],
-    //     'prix'=>$_POST['prix'],
-    //     'gamme'=>$_POST['gamme'],
-    // ]);
-
-    // header('Location: room_management.php');
-    // exit;
+    $request = $database->prepare('INSERT INTO reservation(user_id, room_id, validation, date_arrivee, date_depart) VALUES(:user_id, :room_id, :validation, :date_arrivee, :date_depart)');
+    $request->execute([
+        'user_id'=>$_SESSION['user']['id_user'],
+        'room_id'=>$_GET['id'],
+        'validation'=>0,
+        'date_arrivee'=>$_POST['date'],
+        'date_depart'=>$_POST['date2'],
+    ]);
+    header('Location: validation.php');
+    exit();
 }
 
 $request = $database->prepare('SELECT * FROM rooms r WHERE r.id = :id');
@@ -54,18 +52,18 @@ if (empty($room = $request->fetch())) {
         Réservation :
         <br> Chambre <?php echo $room['num_ch'] ?> de la gamme <?php echo $room['gamme'] ?>
     </h1>
-    <form action="validation.php" method="post"></form>    <!-- a compléter -->
-    <div class="center">
-        <label for="date" >Date arrivée:</label> <br>
-            <input type= "date" name= "date" id="barre" required><br><br>
+    <form action="" method="post">
+        <div class="center">
+            <label for="date" >Date arrivée:</label> <br>
+                <input type= "date" name= "date" id="barre" required><br><br>
 
-        <label for="date2" >Date départ: </label> <br>
-            <input type="date" name= "date2" id="barre" required><br><br>
+            <label for="date2" >Date départ: </label> <br>
+                <input type="date" name= "date2" id="barre" required><br><br>
 
-        <button type="submit" id="bouton2" ><b>Vérifier la disponibilité</b></button></div>
-
+            <button type="submit" id="bouton2" ><b>Réserver la chambre</b></button>
+        </div>
     </form>
-    </div>
+</div>
 
 
 

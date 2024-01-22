@@ -13,3 +13,28 @@
 .desc {
     margin-bottom: 15px;
 }
+
+.form-input {
+    margin: 5px;
+}
+
+.form-controls {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.dates-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fffcfc81;
+}
+
+.search-button {
+    font-size: 18px;
+    height: 25px;
+    margin-right: 10px;
+}

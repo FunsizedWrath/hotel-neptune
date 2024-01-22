@@ -15,21 +15,18 @@
         <br>
 
 
-<div class="bloc">
+<div class="bloc flexbloc">
 
 <h2 class="center2"> Validation de votre réservation</h2>
-<p id="info"> Vous allez réserver une chambre dans notre hôtel. <br>Afin de valider votre réservation, veuillez suivre les étapes en cliquant sur le bouton ci-dessous </p>
+<p id="info"> L'hôtel est en train de valider votre réservation, nous vous contacterons dès qu'elle est validée. </p>
 
-<form action="..." method="post"></form>
+<a href="/index.php"><button id="bouton2" ><b>Retour à l'accueil</b></button></a>
+
+<!-- <form action="..." method="post"></form>
 <div class="center"><a href="paiement.php" id="bouton2" ><b>PASSER AU PAIEMENT</b></div>
+</form> -->
 </div>
-</form>
 
-  </div>
-
-
-
-    </div>
 </body>
 
 </html>
