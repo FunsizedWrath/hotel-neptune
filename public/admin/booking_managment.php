@@ -3,16 +3,14 @@
 require_once __DIR__ . DIRECTORY_SEPARATOR . '../../activate_session.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
 
-$request = $database->prepare('SELECT * FROM reservation r, users u WHERE u.user_id=r.user_id');
+$request = $database->prepare('SELECT * FROM reservation INNER JOIN users ON users.id = reservation.user_id  ');
 $request->execute();
 
 if (empty($reservations = $request->fetchAll())) {
     echo("Vous n'avez aucune reservation.");
 }
 
-usort($reservations, function ($a, $b) {
-  return $a['date_arrivee'] - $b['date_arrivee'];
-});
+
 
 ?>
 <!DOCTYPE html>
@@ -41,6 +39,13 @@ usort($reservations, function ($a, $b) {
               <b>date_arrivee : <?php echo $reservation['date_arrivee'] ?></b>
               <br>
               <b>date_depart : <?php echo $reservation['date_depart'] ?></b>
+              <br>
+              <b>client : <?php echo ( "".$reservation['family_name']." ".$reservation['first_name']) ?></b>
+              <br>
+              <b>telephone : <?php echo $reservation['phone_nb'] ?></b>
+              <br>
+              <b>email : <?php echo $reservation['email'] ?></b>
+              <br>
             </div>
             <a href=<?php echo "booking_validation.php?id=" . $reservation["id"] ?>><button> Valider</button></a>
         </div>
