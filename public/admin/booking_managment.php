@@ -3,7 +3,7 @@
 require_once __DIR__ . DIRECTORY_SEPARATOR . '../../activate_session.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
 
-$request = $database->prepare('SELECT * FROM reservation r');
+$request = $database->prepare('SELECT * FROM reservation r, users u WHERE u.user_id=r.user_id');
 $request->execute();
 
 if (empty($reservations = $request->fetchAll())) {
