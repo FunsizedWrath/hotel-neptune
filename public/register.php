@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <head>
         <link rel="stylesheet" href="styles/index.css" />
         <title> Neptune Hotel </title>
-        <link rel="stylesheet" href="styles/form.css"/>
+        <!-- <link rel="stylesheet" href="styles/form.css"/> -->
     </head>
 
     <body>
