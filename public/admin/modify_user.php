@@ -30,17 +30,16 @@ if (empty($user = $request->fetch())) {
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+    <link rel="stylesheet" href="../styles/index.css" />
         <title> Neptune Hotel </title>
-        <link rel="stylesheet" href="../styles/form.css"/>
-    </head>
-    <body>
-        <div class="container">
-        <div class="topnav navigation text-center">
-        <a href="index.php">
-            Accueil</a>
-         <a href="login.php">
-            Connexion</a>
-        </div>
+        <!-- <link rel="stylesheet" href="../styles/form.css"/> -->
+</head>
+
+<body>
+    <?php require_once "../navbar.php" ?>
+    <br>
+    <br>
+    <br>
         <h1> Modification de <?php echo $user['family_name']; ?> </h1>
         <br>
         <div class="contact">
