@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <form action="" method="post">
         <div class="dates-form">
             <div class="form-controls">
-                <div class="form-input">
+                <!-- <div class="form-input">
                     <label for="date" >Date arrivée :</label> <br>
                     <input type="date" name="arrivee" required><br><br>
                 </div>
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="form-input">
                     <label for="date2" >Date départ :</label> <br>
                     <input type="date" name="depart" required><br><br>
-                </div>
+                </div> -->
 
                 <div class="form-input">
                     <label for="prix" >Prix maximum :</label> <br>
