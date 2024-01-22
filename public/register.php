@@ -59,72 +59,73 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="stylesheet" href="styles/index.css" />
         <title> Neptune Hotel </title>
         <link rel="stylesheet" href="styles/form.css"/>
     </head>
-    <body>
-        <div class="container">
-        <h1> Inscription </h1>
-        <div class="topnav navigation text-center">
-        <a href="index.php">
-            Accueil</a>
-         <a href="login.php">
-            Connexion</a>
-        </div>
-        <br>
-        <div class="contact">
-        <form action="" method="post">
-            <div>
-                <div>
-                    <label for="first_name">Votre prénom *</label>
-                </div>
-                <div>
-                    <input type="text" name="first_name" placeholder="Prénom" required>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label for="family_name">Votre nom *</label>
-                </div>
-                <div>
-                    <input type="text" name="family_name" placeholder="Nom" required>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label for="email">Votre adresse e-mail *</label>
-                </div>
-                <div>
-                    <input type="text" name="email" placeholder="adresse@mail.com" required>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label for="phone_nb">Votre numéro de téléphone *</label>
-                </div>
-                <div>
-                    <input type="tel" name="phone_nb" placeholder="+33 6 11 22 33 44" required>
-                </div>
-            </div>
-            <div class="d-flex">
-                <label for="object">Mot de passe *</label>
-            </div>
-            <div>
-                <input type="password" name="password" placeholder="Mot de passe" required>
-                <button id="toggle-password" type="button" aria-label="Voir le mot de passe">Afficher le mot de passe</button>
-            </div>
-            <div>
-                <label for="object">Confirmer le mot de passe *</label>
 
+    <body>
+
+    <?php require_once "navbar.php" ?>
+    <br>
+    <br>
+    <br>
+    <div class="titre">
+      S'inscrire
+  </div>
+    <div class="contact">
+    <form action="" method="post">
+        <div>
+            <div>
+                <label for="first_name">Votre prénom *</label>
             </div>
             <div>
-                <input type="password" name="password2" placeholder="Mot de passe" required>
-                <button id="toggle-password" type="button" aria-label="Voir le mot de passe">Afficher le mot de passe</button>
+                <input type="text" name="first_name" placeholder="Prénom" required>
             </div>
-            <br> </br>
-                <input type="submit" value="S'incrire">
+        </div>
+        <div>
+            <div>
+                <label for="family_name">Votre nom *</label>
             </div>
-        </form>
-    </div>
+            <div>
+                <input type="text" name="family_name" placeholder="Nom" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="email">Votre adresse e-mail *</label>
+            </div>
+            <div>
+                <input type="text" name="email" placeholder="adresse@mail.com" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="phone_nb">Votre numéro de téléphone *</label>
+            </div>
+            <div>
+                <input type="tel" name="phone_nb" placeholder="+33 6 11 22 33 44" required>
+            </div>
+        </div>
+        <div class="d-flex">
+            <label for="object">Mot de passe *</label>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button id="toggle-password" type="button" aria-label="Voir le mot de passe">Afficher le mot de passe</button>
+        </div>
+        <div>
+            <label for="object">Confirmer le mot de passe *</label>
+
+        </div>
+        <div>
+            <input type="password" name="password2" placeholder="Mot de passe" required>
+            <button id="toggle-password" type="button" aria-label="Voir le mot de passe">Afficher le mot de passe</button>
+        </div>
+        <br> </br>
+            <input type="submit" value="S'incrire">
+        </div>
+    </form>
+</div>
 </div>
 </body>
