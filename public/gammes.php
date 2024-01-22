@@ -60,16 +60,16 @@ Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtois
     <div class="chambre">
         <div class="d-flex">
             <div class="chambre-illustration">
-                <img src="images/chambre_royal.png" alt="Chambre Royal" width=600 lenght=300>&nbsp;
+                <img src="images/chambre_royale.png" alt="Chambre Royale" width=600 lenght=300>&nbsp;
             </div>
             <div class="chambre-contenu">
                 <div class="d-flex">
-                    <h2><b>Chambre Royal</b></h2>
+                    <h2><b>Chambre Royale</b></h2>
                     <span>à partir 210€</span>
                 </div>
                 <div class="center">
                 <p>
-                    Nos chambres Royal ont une vue sur la mer, avec une grande terrasse, avec jacuzzi compris devant le coucher de soleil !
+                    Nos chambres Royale ont une vue sur la mer, avec une grande terrasse, avec jacuzzi compris devant le coucher de soleil !
 Ces chambres sont neuves et climatisées. La salle de bain privative équipée d’une douche à l’italienne est séparée des WC.
 Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtoisie à votre disposition, coffre-fort et mini frigo.
 Réductions sur le restaurant , petit déjeuner compris et piscine privée et sauna à votre disposition
@@ -81,7 +81,7 @@ Réductions sur le restaurant , petit déjeuner compris et piscine privée et sa
     </div>&nbsp;
 
 
-    <!--chambre simple/double; chambre triple; chambre royal:tout compris-->
+    <!--chambre simple/double; chambre triple; chambre royale:tout compris-->
 </div>
 </body>
 

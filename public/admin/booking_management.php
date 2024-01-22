@@ -3,7 +3,7 @@
 require_once __DIR__ . DIRECTORY_SEPARATOR . '../../activate_session.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
 
-$request = $database->prepare('SELECT * FROM users INNER JOIN reservation ON users.id = reservation.user_id  ');
+$request = $database->prepare('SELECT * FROM users JOIN reservation ON users.id = reservation.user_id');
 $request->execute();
 
 if (empty($reservations = $request->fetchAll())) {
@@ -51,6 +51,7 @@ if (empty($reservations = $request->fetchAll())) {
               <a href=<?php echo "booking_validation.php?id=" . $reservation["id"] ?>><button> Valider</button></a>
               <a href=<?php echo "booking_suppr.php?id=" . $reservation["id"] ?>><button> Refuser</button></a>
               <?php } else { ?>
+              <a href=<?php echo "booking_receipt.php?id=" . $reservation["id"] ?>><button> Facture</button></a>
               <a href=<?php echo "booking_suppr.php?id=" . $reservation["id"] ?>><button> Supprimer</button></a>
               <?php } ?>
           </div>

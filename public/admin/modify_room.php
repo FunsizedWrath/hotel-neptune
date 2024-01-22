@@ -72,7 +72,7 @@ if (empty($room = $request->fetch())) {
         <div>
             <label for="chambre-select">Gamme de la chambre</label><br>
             <select name="gamme" id="chambre-select">
-                <option value="Royal" <?php echo $room['gamme'] == 'Royal' ? 'selected' : '' ?>>Royal</option>
+                <option value="Royale" <?php echo $room['gamme'] == 'Royale' ? 'selected' : '' ?>>Royale</option>
                 <option value="Confort" <?php echo $room['gamme'] == 'Confort' ? 'selected' : '' ?>>Confort</option>
                 <option value="Standard" <?php echo $room['gamme'] == 'Standard' ? 'selected' : '' ?>>Standard</option>
             </select>

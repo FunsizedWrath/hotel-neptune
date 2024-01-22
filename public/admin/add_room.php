@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="chambre-select">Gamme de la chambre</label><br>
                 <select name="gamme" id="chambre-select">
                     <option value="">Faites votre choix</option>
-                    <option value="Royal">Royal</option>
+                    <option value="Royale">Royale</option>
                     <option value="Confort">Confort</option>
                     <option value="Standard">Standard</option>
                 </select>

@@ -31,7 +31,7 @@ require_once __DIR__ . '/../activate_session.php';
         <div class="sousmenu">
             <div class="article3">
                 <div><img src="images/pisicne-interieure-chambre-luxe-design.jpg" alt="chambre"></div>
-                <div> <p>Préférez vous la Chambre Royale ou nos chambres familiales ? Le luxe à portée de vos mains...<a href="gammes.php">en savoir plus</a></p></div>
+                <div> <p>Préférez vous la Chambre Royalee ou nos chambres familiales ? Le luxe à portée de vos mains...<a href="gammes.php">en savoir plus</a></p></div>
             </div>
             <div class="article3">
                 <div><img src="images/thumb_Reflets_du_soleil_couchant_sur_la_plage.jpg" alt="coucher de soleil"></div>
