@@ -5,7 +5,7 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
 
 if (!isset($_GET['id']))
 {
-    header('Location : booking_management.php');
+    header('Location: booking_management.php');
     exit;
 }
 
@@ -17,7 +17,7 @@ $request->execute(['id' => $_GET['id']]);
 
 if (empty($reservation = $request->fetch()))
 {
-    header('Location : booking_management.php');
+    header('Location: booking_management.php');
     exit;
 }
 
@@ -67,12 +67,7 @@ $days = floor(($stay_duration - $years * 365*60*60*24 - $months*30*60*60*24)/ (6
               <br>
               <b>Prix total : <?php echo $reservation['prix'] * $days ?>€</b>
             </div>
-            <?php if (isset($reservation['validation']) && $reservation['validation'] === 0) { ?>
-              <a href=<?php echo "booking_validation.php?id=" . $reservation["id"] ?>><button> Valider</button></a>
-              <a href=<?php echo "booking_suppr.php?id=" . $reservation["id"] ?>><button> Refuser</button></a>
-              <?php } else { ?>
-              <a href=<?php echo "booking_suppr.php?id=" . $reservation["id"] ?>><button> Supprimer</button></a>
-              <?php } ?>
+                <a href='booking_management.php'><button> Retour aux réservations</button></a>
           </div>
     </div>
 </body>
