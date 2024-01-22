@@ -28,12 +28,12 @@ require_once __DIR__ . '/admin/check_admin.php';
       </div>
       <div class="option">
         <div><img src="images/calendrier.jpg" alt="lit"></div>
-        <div><a href="admin/booking_managment.php">MODIFIER LES RESERVATIONS</a></div>
+        <div><a href="admin/booking_management.php">MODIFIER LES RESERVATIONS</a></div>
       </div>
 
       <div class="option">
         <div><img src="images/utilisateurs.webp" alt="lit"></div>
-        <div><a href="admin/users_managment.php">MODIFIER LES UTLISATEURS</a></div>
+        <div><a href="admin/users_management.php">MODIFIER LES UTLISATEURS</a></div>
       </div>
     </div>
 </body>
