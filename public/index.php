@@ -39,7 +39,7 @@ require_once __DIR__ . '/../activate_session.php';
                 </div>
         </div>
     </div>
-   <div class="contact">
+   <div id="contact" class="contacte">
         <div>
                 ADRESSE
                 <br>

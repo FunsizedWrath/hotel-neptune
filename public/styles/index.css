@@ -120,17 +120,13 @@ a {
 }
 
 .contact{
-  background-color:#01394c;
+  background-color:#01394cab;
   width: 100%;
   color: #ffffff;
   padding-top: 20px;
-  padding-left: 30px;
   padding-bottom: 50px;
-  display: flex;
-}
-
-.contact div {
-  padding-left: 70px;
+  display: block;
+  padding-left: 35%;
 }
 
 
@@ -163,4 +159,65 @@ a {
 .contactg div {
   padding-left: 170px;
   font-size: larger;
+}
+
+
+.contacte{
+  background-color:#01394c;
+  width: 100%;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.contacte div {
+  padding-left: 70px;
+}
+
+.contact input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #091540;
+}
+
+.contact input[type=password], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #091540;
+}
+
+.contact input[type=tel], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #091540;
+}
+
+.contact input[type=submit] {
+  width: 20%;
+  background-color: #04bdfb;
+  color: #091540;
+  padding: 14px 20px;
+  margin-left: 90px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif ;
 }

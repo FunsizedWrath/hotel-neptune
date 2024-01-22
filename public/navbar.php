@@ -10,7 +10,7 @@ require_once __DIR__ . '/../activate_session.php';
     <?php } ?>
     <a href="/room_list.php">Réserver une chambre</a>
     <a href="/gammes.php">Nos gammes</a>
-    <a href="/contact.php">Nous Contacter</a>
+    <a href="index.php#contact">Nous Contacter</a>
     <?php if (!isset($_SESSION['user'])) { ?>
         <a href="register.php">M'inscrire</a>
         <a href="login.php">Me connecter</a>
