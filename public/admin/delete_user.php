@@ -21,6 +21,6 @@ if (isset($_GET['id'])) {
     <a href="index.php">Accueil</a>
     </div>
     <h1>L'utilisateur a bien été supprimé</h1>
-    <a href="user_management.php"><button>Retour à la gestion des utilisateurs</button></a>
+    <a href="users_management.php"><button>Retour à la gestion des utilisateurs</button></a>
 
 </body>
