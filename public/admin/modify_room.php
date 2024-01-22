@@ -31,68 +31,67 @@ if (empty($room = $request->fetch())) {
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="stylesheet" href="../styles/index.css" />
         <title> Neptune Hotel </title>
-        <link rel="stylesheet" href="../styles/form.css"/>
-    </head>
-    <body>
-        <div class="container">
-        <div class="topnav navigation text-center">
-        <a href="index.php">
-            Accueil</a>
-         <a href="login.php">
-            Connexion</a>
+        <!-- <link rel="stylesheet" href="../styles/form.css"/> -->
+</head>
+
+<body>
+<?php require_once "../navbar.php" ?>
+<br>
+<br>
+<br>
+    <h1> Modification de la chambre n°<?php echo $room['num_ch']; ?> </h1>
+    <br>
+    <div class="contact">
+    <form action="" method="post">
+        <div>
+            <div>
+                <label for="num_ch">Numéro de Chambre *</label>
+            </div>
+            <div>
+                <input type="text" name="num_ch" value="<?php echo $room['num_ch'] ?>" required>
+            </div>
         </div>
-        <h1> Modification de la chambre n°<?php echo $room['num_ch']; ?> </h1>
+        <div>
+            <div>
+                <label for="etage">Etage de la chambre *</label>
+            </div>
+            <div>
+                <input type="text" name="etage" value="<?php echo $room['etage'] ?>" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="surface">Surface de la chambre *</label>
+            </div>
+            <div>
+                <input type="text" name="surface" value="<?php echo $room['surface'] ?>" required>
+            </div>
+        </div>
+        <div>
+            <label for="chambre-select">Gamme de la chambre</label><br>
+            <select name="gamme" id="chambre-select">
+                <option value="Royal" <?php echo $room['gamme'] == 'Royal' ? 'selected' : '' ?>>Royal</option>
+                <option value="Confort" <?php echo $room['gamme'] == 'Confort' ? 'selected' : '' ?>>Confort</option>
+                <option value="Standard" <?php echo $room['gamme'] == 'Standard' ? 'selected' : '' ?>>Standard</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <label for="prix">Prix d'une nuit *</label>
+            </div>
+            <div>
+                <input type="text" name="prix" value="<?php echo $room['prix'] ?>" required>
+            </div>
+        </div>
         <br>
-        <div class="contact">
-        <form action="" method="post">
-            <div>
-                <div>
-                    <label for="num_ch">Numéro de Chambre *</label>
-                </div>
-                <div>
-                    <input type="text" name="num_ch" value="<?php echo $room['num_ch'] ?>" required>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label for="etage">Etage de la chambre *</label>
-                </div>
-                <div>
-                    <input type="text" name="etage" value="<?php echo $room['etage'] ?>" required>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label for="surface">Surface de la chambre *</label>
-                </div>
-                <div>
-                    <input type="text" name="surface" value="<?php echo $room['surface'] ?>" required>
-                </div>
-            </div>
-            <div>
-                <label for="chambre-select">Gamme de la chambre</label><br>
-                <select name="gamme" id="chambre-select">
-                    <option value="Royal" <?php echo $room['gamme'] == 'Royal' ? 'selected' : '' ?>>Royal</option>
-                    <option value="Confort" <?php echo $room['gamme'] == 'Confort' ? 'selected' : '' ?>>Confort</option>
-                    <option value="Standard" <?php echo $room['gamme'] == 'Standard' ? 'selected' : '' ?>>Standard</option>
-                </select>
-            </div>
-            <div>
-                <div>
-                    <label for="prix">Prix d'une nuit *</label>
-                </div>
-                <div>
-                    <input type="text" name="prix" value="<?php echo $room['prix'] ?>" required>
-                </div>
-            </div>
-            <br>
-            <div class="submit-buttons">
-                <input type="submit" value="Enregistrer les modifications">
-                <button class="delete" formaction="delete_room.php?id=<?php echo  $_GET['id']?>"><b>Supprimer la chambre</b></button>
-            </div>
-            </div>
-        </form>
-    </div>
+        <div class="submit-buttons">
+            <input type="submit" value="Enregistrer les modifications">
+            <button class="delete" formaction="delete_room.php?id=<?php echo  $_GET['id']?>"><b>Supprimer la chambre</b></button>
+        </div>
+        </div>
+    </form>
+</div>
 </div>
 </body>

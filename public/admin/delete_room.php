@@ -12,14 +12,16 @@ if (isset($_GET['id'])) {
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="../styles/index.css" />
     <title> Neptune Hotel </title>
     <link rel="stylesheet" href="../styles/form.css"/>
 </head>
+
 <body>
-    <div class="container">
-    <div class="topnav navigation text-center">
-    <a href="index.php">Accueil</a>
-    </div>
+<?php require_once "../navbar.php" ?>
+<br>
+<br>
+<br>
     <h1>La chambre a bien été supprimée</h1>
     <a href="room_management.php"><button>Retour à la gestion des chambres</button></a>
 

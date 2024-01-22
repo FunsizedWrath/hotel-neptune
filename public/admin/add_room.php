@@ -49,19 +49,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="stylesheet" href="../styles/index.css" />
         <title> Neptune Hotel </title>
-        <link rel="stylesheet" href="styles/form.css"/>
-    </head>
-    <body>
-        <div class="container">
-        <h1> Inscription </h1>
-        <div class="topnav navigation text-center">
-        <a href="index.php">
-            Accueil</a>
-         <a href="login.php">
-            Connexion</a>
-        </div>
-        <br>
+        <!-- <link rel="stylesheet" href="styles/form.css"/> -->
+</head>
+
+<body>
+    <?php require_once "../navbar.php" ?>
+    <br>
+    <br>
+    <br>
         <div class="contact">
         <form action="" method="post">
             <div>
