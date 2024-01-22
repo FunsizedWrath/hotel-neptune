@@ -46,9 +46,15 @@ if (empty($reservations = $request->fetchAll())) {
               <br>
               <b>email : <?php echo $reservation['email'] ?></b>
               <br>
+              <b>validation : <?php if ($reservation['validation']) { echo("Validé");  } 
+              else {
+                echo("En attente");
+              }?></b>
+              <br>
             </div>
             <a href=<?php echo "booking_validation.php?id=" . $reservation["id"] ?>><button> Valider</button></a>
-        </div>
+            <a href=<?php echo "booking_suppr.php?id=" . $reservation["id"] ?>><button> Supprimer</button></a>
+          </div>
     <?php } ?>
     </div>
 </body>
