@@ -29,7 +29,6 @@ if (empty($reservations = $request->fetchAll())) {
     <div class="titre">
       Gestion des réservations
   </div>
-
     <div class="room-list">
     <?php foreach($reservations as $reservation) { ?>
       <div class="room">
