@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // does user exist
-    $request = $database->prepare('SELECT id_user FROM users u WHERE u.email = :email');
+    $request = $database->prepare('SELECT id FROM users u WHERE u.email = :email');
     $request->execute(['email' => $_POST['email']]);
 
     if ($request->fetch()) {

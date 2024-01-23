@@ -3,7 +3,7 @@
 require_once __DIR__ . DIRECTORY_SEPARATOR . '../../activate_session.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
 
-$request = $database->prepare('SELECT * FROM users JOIN reservation ON users.id = reservation.user_id');
+$request = $database->prepare('SELECT * FROM reservation JOIN users ON users.id = reservation.user_id JOIN rooms ON reservation.room_id=rooms.id');
 $request->execute();
 
 if (empty($reservations = $request->fetchAll())) {
@@ -37,6 +37,10 @@ if (empty($reservations = $request->fetchAll())) {
               <b>Date d'arrivée : <?php echo $reservation['date_arrivee'] ?></b>
               <br>
               <b>Date de départ : <?php echo $reservation['date_depart'] ?></b>
+              <br>
+              <b>Chambre : <?php echo $reservation['num_ch'] ?></b>
+              <br>
+              <b>Gamme : <?php echo $reservation['gamme'] ?></b>
               <br>
               <b>Client : <?php echo ( "".$reservation['family_name']." ".$reservation['first_name']) ?></b>
               <br>
