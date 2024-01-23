@@ -3,7 +3,7 @@
 require_once __DIR__ . DIRECTORY_SEPARATOR . '../../activate_session.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'check_admin.php';
 
-$request = $database->prepare('SELECT * FROM reservation JOIN users ON users.id = reservation.user_id JOIN rooms ON reservation.room_id=rooms.id');
+$request = $database->prepare('SELECT reservation.id as res_id, * FROM users JOIN reservation ON users.id = reservation.user_id JOIN rooms ON reservation.room_id=rooms.id');
 $request->execute();
 
 if (empty($reservations = $request->fetchAll())) {
@@ -29,7 +29,6 @@ if (empty($reservations = $request->fetchAll())) {
     <div class="titre">
       Gestion des réservations
   </div>
-
     <div class="room-list">
     <?php foreach($reservations as $reservation) { ?>
       <div class="room">
@@ -52,11 +51,11 @@ if (empty($reservations = $request->fetchAll())) {
               <br>
             </div>
             <?php if (isset($reservation['validation']) && $reservation['validation'] === 0) { ?>
-              <a href=<?php echo "booking_validation.php?id=" . $reservation["id"] ?>><button> Valider</button></a>
-              <a href=<?php echo "booking_suppr.php?id=" . $reservation["id"] ?>><button> Refuser</button></a>
+              <a href=<?php echo "booking_validation.php?id=" . $reservation["res_id"] ?>><button> Valider</button></a>
+              <a href=<?php echo "booking_suppr.php?id=" . $reservation["res_id"] ?>><button> Refuser</button></a>
               <?php } else { ?>
-              <a href=<?php echo "booking_receipt.php?id=" . $reservation["id"] ?>><button> Facture</button></a>
-              <a href=<?php echo "booking_suppr.php?id=" . $reservation["id"] ?>><button> Supprimer</button></a>
+              <a href=<?php echo "booking_receipt.php?id=" . $reservation["res_id"] ?>><button> Facture</button></a>
+              <a href=<?php echo "booking_suppr.php?id=" . $reservation["res_id"] ?>><button> Supprimer</button></a>
               <?php } ?>
           </div>
     <?php } ?>
