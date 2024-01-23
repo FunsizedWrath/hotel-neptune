@@ -60,7 +60,7 @@ Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtois
     <div class="chambre">
         <div class="d-flex">
             <div class="chambre-illustration">
-                <img src="images/chambre_royale.png" alt="Chambre Royale" width=600 lenght=300>&nbsp;
+                <img src="images/chambre_royal.png" alt="Chambre Royale" width=600 lenght=300>&nbsp;
             </div>
             <div class="chambre-contenu">
                 <div class="d-flex">

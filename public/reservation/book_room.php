@@ -8,10 +8,6 @@ if((session_status() !== PHP_SESSION_ACTIVE) || (!isset($_SESSION['user']))) {
     exit;
 }
 
-foreach($_SESSION['user'] as $key => $value) {
-    echo $key, '=>', $value, "<br>";
-}
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $request = $database->prepare('INSERT INTO reservation(user_id, room_id, validation, date_arrivee, date_depart) VALUES(:user_id, :room_id, :validation, :date_arrivee, :date_depart)');
     $request->execute([
