@@ -4,8 +4,14 @@ require_once __DIR__ . '/../../activate_session.php';
 require_once __DIR__ . '/check_admin.php';
 require_once __DIR__ . '/../../database.php';
 
+if (!isset($_GET['id']))
+{
+    header('Location: booking_management.php');
+    exit;
+}
+
 if (isset($_GET['id'])) {
-    $request = $database->prepare("DELETE FROM rooms WHERE id= :id");
+    $request = $database->prepare("DELETE FROM reservation WHERE id = :id");
     $request->execute(['id' => $_GET['id']]);
 }
 ?>
@@ -22,7 +28,7 @@ if (isset($_GET['id'])) {
 <br>
 <br>
 <br>
-    <h1>La chambre a bien été supprimée</h1>
-    <a href="room_management.php"><button>Retour à la gestion des chambres</button></a>
+    <h1>La réservation a bien été supprimée</h1>
+    <a href="booking_management.php"><button>Retour à la gestion des réservations</button></a>
 
 </body>

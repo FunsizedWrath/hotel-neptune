@@ -8,18 +8,7 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <div class="gauche">
-        <a class="active" href="index.php">Accueil</a>
-        <a href="#reserv">Reserver ma Chambre</a>
-        <a href="listechambre.php">Liste des Chambres</a>
-        <a href="#inscr">M'inscrire</a>
-        <a href="contact.php">Nous Contacter</a>
-      </div>
-      <div class="droite">
-        <img src="images/icone.png" alt="identifant">
-      </div>
-    </div>
+<?php require_once "navbar.php" ?>
     <div class="photo">
         <img src="images/thumb_Reflets_du_soleil_couchant_sur_la_plage.jpg" alt="hôtel">
     </div>

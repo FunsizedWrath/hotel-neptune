@@ -5,7 +5,7 @@
     display:flex;
     justify-content: space-between;
   }
-  
+
   .gauche a {
     float: left;
     color: #f2f2f2;
@@ -14,12 +14,12 @@
     text-decoration: none;
     font-size: 17px;
   }
-  
+
   .gauche a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   .gauche a.active {
     background-color: #04ade5;
     color: white;
@@ -128,7 +128,7 @@ a {
 .gamme{
     background-color: white;
 }
-.chambre-royal{
+.chambre-royale{
     background-color: white;
     border-style: solid;
     border-width: 5px;
@@ -144,9 +144,18 @@ a {
     margin-right: 40px;
   }
 
-  
+  .droite {
+    display: flex;
+    color: #f2f2f2;
+
+  }
+
+  .droite p {
+    margin-right: 10px;
+  }
+
 #barre {
-    
+
     height : 25px;
     width: 350px;
 }
@@ -158,6 +167,13 @@ a {
     padding-bottom: 60px;
     background-color: rgb(210, 190, 165);
 }
+.flexbloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #info {
     font-size: 140%;
     text-align: center;
@@ -175,15 +191,15 @@ a {
     font-size: 20px;
     height : 70px;
     width: 250px;
-    
+
 }
 #bouton2:hover{
-    
+
     color: black;
     background-color:#ddd;
   }
 .center2{
-    
+
     display: flex;
     justify-content: center;
     align-items: center;

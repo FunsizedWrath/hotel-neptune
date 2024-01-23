@@ -9,18 +9,7 @@
 
 <body class="gamme">
 <div class="all">
-    <div class="topnav">
-        <div class="gauche">
-        <a href="index.php">Accueil</a>
-        <a href="#reserv">Réserver ma Chambre</a>
-        <a class="active" href="listechambre.php">Liste des Chambres</a>
-        <a href="#inscr">M'inscrire</a>
-        <a href="contact.php">Nous Contacter</a>
-      </div>
-      <div class="droite">
-        <img src="images/icone.png" alt="identifant">
-      </div>
-    </div>
+<?php require_once "navbar.php" ?>
     </div>
     <br><br>
     <h1><b>Nos Gammes</h1></b>
@@ -40,7 +29,7 @@
                 <p>
                     Nos chambres standards ont une vue sur une cour et un parking privatifs. Elles sont très calmes. Ces chambres sont neuves et climatisées. La salle de bain privative équipée d’une douche à l’italienne est séparée des WC. Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtoisie à votre disposition,coffre-fort et mini frigo.
                 </p>
-                <a href="standard.php" id="lien"> Voir nos chambres....</a>
+                <a href="/room_list.php" id="lien"> Voir nos chambres....</a>
                 </div>
             </div>
         </div>
@@ -62,7 +51,7 @@
 Ces chambres sont neuves et climatisées. La salle de bain privative équipée d’une douche à l’italienne est séparée des WC.
 Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtoisie à votre disposition, coffre-fort et mini frigo.
                 </p>
-                <a href="confort.php" id="lien"> Voir nos chambres.... </a>
+                <a href="/room_list.php" id="lien"> Voir nos chambres.... </a>
                 </div>
             </div>
         </div>
@@ -71,28 +60,28 @@ Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtois
     <div class="chambre">
         <div class="d-flex">
             <div class="chambre-illustration">
-                <img src="images/chambre_royal.png" alt="Chambre Royal" width=600 lenght=300>&nbsp;
+                <img src="images/chambre_royal.png" alt="Chambre Royale" width=600 lenght=300>&nbsp;
             </div>
             <div class="chambre-contenu">
                 <div class="d-flex">
-                    <h2><b>Chambre Royal</b></h2>
+                    <h2><b>Chambre Royale</b></h2>
                     <span>à partir 210€</span>
                 </div>
                 <div class="center">
                 <p>
-                    Nos chambres Royal ont une vue sur la mer, avec une grande terrasse, avec jacuzzi compris devant le coucher de soleil !
+                    Nos chambres Royale ont une vue sur la mer, avec une grande terrasse, avec jacuzzi compris devant le coucher de soleil !
 Ces chambres sont neuves et climatisées. La salle de bain privative équipée d’une douche à l’italienne est séparée des WC.
 Vous trouverez à votre arrivée une bouteille d’eau et un plateau de courtoisie à votre disposition, coffre-fort et mini frigo.
 Réductions sur le restaurant , petit déjeuner compris et piscine privée et sauna à votre disposition
                 </p>
-                <a href="royal.php" id="lien"> Voir nos chambres.... </a>
+                <a href="/room_list.php" id="lien"> Voir nos chambres.... </a>
                 </div>
             </div>
         </div>
     </div>&nbsp;
 
 
-    <!--chambre simple/double; chambre triple; chambre royal:tout compris-->
+    <!--chambre simple/double; chambre triple; chambre royale:tout compris-->
 </div>
 </body>
 

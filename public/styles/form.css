@@ -75,6 +75,37 @@ button#toggle-password {
     right: 0;
   }
 
+  .delete {
+    background-color: rgb(247, 26, 18);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .delete:hover {
+    background-color: rgb(180, 42, 32);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .delete:active {
+    background-color: rgb(255, 88, 88);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+
+
+.submit-buttons {
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+}
+
   @media screen and (min-width: 576px) {
     .container {
         width: 500px;

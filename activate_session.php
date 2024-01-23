@@ -4,11 +4,6 @@ if (isset($_COOKIE['PHPSESSID'])) {
     session_start();
 }
 
-if (isset($_GET['action']) && $_GET['action'] === 'logout') {
-    $_SESSION = [];
-    session_destroy();
-    header('Location: /');
-    exit;
-}
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'logout.php';
 
 ?>

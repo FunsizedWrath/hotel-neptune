@@ -2,10 +2,9 @@
 
 require_once __DIR__ . '/../activate_session.php';
 require_once __DIR__ . '/../database.php';
-require_once __DIR__ . '/admin/check_admin.php';
 
 if (isset($_SESSION['user'])) {
-    header('Location:/index.php');
+    header('Location: /index.php');
     exit;
 }
 
@@ -33,10 +32,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // starting session
     session_start();
     $_SESSION['user'] = $connected_user;
-    $is_admin = !!$_SESSION['user']['is_admin'];
 
+    $is_admin = !!$_SESSION['user']['is_admin'];
     if (!$is_admin) {
-        header('Location:/index.php');
+        header('Location: /index.php');
         exit;
     }
 
@@ -49,17 +48,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="stylesheet" href="styles/index.css" />
         <title> Neptune Hotel </title>
-        <link rel="stylesheet" href="styles/form.css"/>
+        <!-- <link rel="stylesheet" href="styles/form.css"/> -->
     </head>
+
     <body>
+    <?php require_once "navbar.php" ?>
+    <br>
+    <br>
+    <br>
+    <div class="titre">
+      Se connecter
+  </div>
         <div class="container">
-        <h1> Connexion </h1>
         <div class="topnav navigation text-center">
-        <a href="index.php">
-            Accueil</a>
-         <a href="register.php">
-            Inscription</a>
         </div>
         <br>
         <div class="contact">

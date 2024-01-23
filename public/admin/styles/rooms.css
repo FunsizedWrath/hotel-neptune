@@ -1,0 +1,15 @@
+.room-list {
+    margin: 15px;
+}
+
+.room {
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    margin-bottom: 15px;
+}

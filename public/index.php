@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__ . '/../activate_session.php';
-require_once __DIR__ . '/../logout.php';
 
 ?>
 
@@ -13,36 +12,7 @@ require_once __DIR__ . '/../logout.php';
 
 <body>
 
-    <div class="topnav">
-        <div class="gauche">
-        <a class="active" href="index.php">Accueil</a>
-        <a href="reserv.php">Réserver ma Chambre</a>
-        <a href="listechambre.php">Liste des Chambres</a>
-        <a href="contact.php">Nous Contacter</a>
-        <?php if (isset($_SESSION['user'])) { ?>
-            <a href ="?action=logout"> Me déconnecter</a>
-            <p>
-                <?php echo "Bonjour " . $_SESSION['user']['first_name'] . " " . $_SESSION['user']['family_name'] ?>
-                Vous êtes connecté.e
-            </p>
-        <?php } else { ?>
-            <a href="register.php">M'inscrire</a>
-            <a href="login.php">Me connecter</a>
-        <?php } ?>
-      </div>
-      <div class="droite">
-      <?php if (isset($_SESSION['user'])) { ?>
-            <a href ="?action=logout"> Me déconnecter</a>
-            <p>
-                <?php echo "Bonjour " . $_SESSION['user']['first_name'] . " " . $_SESSION['user']['family_name'] ?>
-                Vous êtes connecté.e
-            </p>
-        <?php } else { ?>
-            <p> Vous n'êtes pas connecté.e </p>
-        <?php } ?>
-        <a href="login.php"><img src="images/icone.png" alt="identifant"></a>
-      </div>
-    </div>
+<?php require_once "navbar.php" ?>
 <br>
 <br>
 <br>
@@ -56,12 +26,12 @@ require_once __DIR__ . '/../logout.php';
             </div>
         <div class="article2">
             <div><img src="images/Vue_mer-hotel-neptune-berck_sur_mer_1(1).png" alt="Reserver"></div>
-            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="reserv.php">Réserver ma chambre</a></p></div>
+            <div> <p>Déjà Convaincu ? Reservez Votre Chambre Dès Maintenant ! <a href="room_list.php">Réserver ma chambre</a></p></div>
         </div>
         <div class="sousmenu">
             <div class="article3">
                 <div><img src="images/pisicne-interieure-chambre-luxe-design.jpg" alt="chambre"></div>
-                <div> <p>Préférez vous la Chambre Royale ou nos chambres familiales ? Le luxe à portée de vos mains...<a href="listechambre.php">en savoir plus</a></p></div>
+                <div> <p>Préférez vous la Chambre Royalee ou nos chambres familiales ? Le luxe à portée de vos mains...<a href="gammes.php">en savoir plus</a></p></div>
             </div>
             <div class="article3">
                 <div><img src="images/thumb_Reflets_du_soleil_couchant_sur_la_plage.jpg" alt="coucher de soleil"></div>
@@ -69,7 +39,7 @@ require_once __DIR__ . '/../logout.php';
                 </div>
         </div>
     </div>
-   <div class="contact">
+   <div id="contact" class="contacte">
         <div>
                 ADRESSE
                 <br>
@@ -97,7 +67,8 @@ require_once __DIR__ . '/../logout.php';
             ACCESSIBILITE
             <br>
             <br>
-            <img src="/images/logos-handicaps-blc.webp" alt="logohandicap">
+            <img src="images/logos-handicaps-blc.webp" alt="logohandicap">
+        </div>
    </div>
 </body>
 

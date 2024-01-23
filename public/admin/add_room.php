@@ -1,29 +1,28 @@
 <?php
 
- require_once __DIR__ . '/../activate_session.php';
-include_once __DIR__ . '/../database.php';
+require_once __DIR__ . '/../../activate_session.php';
+require_once __DIR__ . '/check_admin.php';
+require_once __DIR__ . '/../../database.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (
-        !isset ($_POST['first_name'])
-        ||!isset ($_POST['family_name'])
-        ||!isset ($_POST['email'])
-        ||!isset ($_POST['phone_nb'])
-        ||!isset ($_POST['password'])
-        ||!isset ($_POST['password2'])
+        !isset ($_POST['num_ch'])
+        ||!isset ($_POST['etage'])
+        ||!isset ($_POST['surface'])
+        ||!isset ($_POST['prix'])
+        ||!isset ($_POST['gamme'])
 
-        ||empty ($_POST['first_name'])
-        ||empty ($_POST['family_name'])
-        ||empty ($_POST['email'])
-        ||empty ($_POST['phone_nb'])
-        ||empty ($_POST['password'])
-        ||empty ($_POST['password2'])
+        ||empty ($_POST['num_ch'])
+        ||empty ($_POST['etage'])
+        ||empty ($_POST['surface'])
+        ||empty ($_POST['prix'])
+        ||empty ($_POST['gamme'])
         ) {
         exit("Le formulaire est incomplet.");
     }
 
     // does room exist
-    $request = $database->prepare('SELECT id FROM chambre c WHERE c.num_ch = :num_ch');
+    $request = $database->prepare('SELECT id FROM rooms c WHERE c.num_ch = :num_ch');
     $request->execute(['num_ch' => $_POST['num_ch']]);
 
     if ($request->fetch()) {
@@ -31,12 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // register with database
-    $request = $database->prepare('INSERT INTO chambre(num_ch, etage, surface, prix) VALUES(:num_ch, :etage, :surface, :prix)');
+    $request = $database->prepare('INSERT INTO rooms(num_ch, etage, surface, prix, gamme, dispo) VALUES(:num_ch, :etage, :surface, :prix, :gamme, :dispo)');
     $request->execute([
         'num_ch'=>$_POST['num_ch'],
         'etage'=>$_POST['etage'],
         'surface'=>$_POST['surface'],
         'prix'=>$_POST['prix'],
+        'gamme'=>$_POST['gamme'],
+        'dispo'=>1,
     ]);
 
     header('Location:/pageadmin.php');
@@ -48,24 +49,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="stylesheet" href="../styles/index.css" />
         <title> Neptune Hotel </title>
-        <link rel="stylesheet" href="styles/form.css"/>
-    </head>
-    <body>
-        <div class="container">
-        <h1> Inscription </h1>
-        <div class="topnav navigation text-center">
-        <a href="index.php">
-            Accueil</a>
-         <a href="login.php">
-            Connexion</a>
-        </div>
-        <br>
+        <!-- <link rel="stylesheet" href="styles/form.css"/> -->
+</head>
+
+<body>
+    <?php require_once "../navbar.php" ?>
+    <br>
+    <br>
+    <br>
         <div class="contact">
         <form action="" method="post">
             <div>
                 <div>
-                    <label for="num_ch">Numero de Chambre *</label>
+                    <label for="num_ch">Numéro de Chambre *</label>
                 </div>
                 <div>
                     <input type="text" name="num_ch" placeholder="ex:101" required>
@@ -84,8 +82,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label for="surface">Surface de la chambre *</label>
                 </div>
                 <div>
-                    <input type="text" name="surface en m^2" placeholder="ex:2,10" required>
+                    <input type="text" name="surface" placeholder="ex:2,10" required>
                 </div>
+            </div>
+            <div>
+                <label for="chambre-select">Gamme de la chambre</label><br>
+                <select name="gamme" id="chambre-select">
+                    <option value="">Faites votre choix</option>
+                    <option value="Royale">Royale</option>
+                    <option value="Confort">Confort</option>
+                    <option value="Standard">Standard</option>
+                </select>
             </div>
             <div>
                 <div>
@@ -96,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
             <br> </br>
-                <input type="submit" value="rajouter une chambre">
+                <input type="submit" value="Rajouter une chambre">
             </div>
         </form>
     </div>

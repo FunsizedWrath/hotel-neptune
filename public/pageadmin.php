@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__ . '/../activate_session.php';
-require_once __DIR__ . '/../logout.php';
 require_once __DIR__ . '/admin/check_admin.php';
 
 ?>
@@ -15,18 +14,7 @@ require_once __DIR__ . '/admin/check_admin.php';
 </head>
 
 <body>
-    <div class="topnav">
-        <div class="gauche">
-        <a class="active" href="index.php">Accueil</a>
-        <a href="reserv.php">Réserver ma Chambre</a>
-        <a href="listechambre.php">Liste des Chambres</a>
-        <a href="contact.php">Nous Contacter</a>
-        <a href ="?action=logout"> Me déconnecter</a>
-      </div>
-      <div class="droite">
-        <a href="s'identifier.php"><img src="images/icone.png" alt="identifant"></a>
-      </div>
-    </div>
+    <?php require_once 'navbar.php' ?>
   <br>
   <br>
   <br>
@@ -36,16 +24,16 @@ require_once __DIR__ . '/admin/check_admin.php';
     <div class="menu">
       <div class="option">
         <div><img src="images/lit.jpg" alt="lit"></div>
-        <div><a href="admin/sousmenuroom.php">MODIFIER LES CHAMBRES</a></div>
+        <div><a href="admin/room_management.php">GESTION DES CHAMBRES</a></div>
       </div>
       <div class="option">
         <div><img src="images/calendrier.jpg" alt="lit"></div>
-        <div><a href=>MODIFIER LES RESERVATIONS</a></div>
+        <div><a href="admin/booking_management.php">MODIFIER LES RESERVATIONS</a></div>
       </div>
 
       <div class="option">
         <div><img src="images/utilisateurs.webp" alt="lit"></div>
-        <div><a href=>MODIFIER LES UTLISATEURS</a></div>
+        <div><a href="admin/users_management.php">MODIFIER LES UTLISATEURS</a></div>
       </div>
     </div>
 </body>
